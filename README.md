@@ -1,17 +1,14 @@
-Moodle App
-=================
+# RAIN Education App
 
-This is the primary repository of source code for the official mobile app for Moodle.
+A mobile learning app for RAIN Education, based on the open-source Moodle App.
 
-* [User documentation](https://docs.moodle.org/en/Moodle_app)
-* [Developer documentation](https://moodledev.io/general/app)
-* [Development environment setup](https://moodledev.io/general/app/development/setup)
-* [Bug Tracker](https://moodle.atlassian.net/browse/MOBILE)
-* [Release Notes](https://moodledev.io/general/app_releases)
+## Project status
 
-This project is tested with BrowserStack.
+This repository is being customized into a branded mobile learning app for RAIN Education.
 
-License
--------
+## Credits and license
 
-[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+This project is based on the open-source Moodle App by Moodle HQ and is licensed under the Apache License 2.0.
+
+Original project: https://github.com/moodlehq/moodleapp
+License: http://www.apache.org/licenses/LICENSE-2.0

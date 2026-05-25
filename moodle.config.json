@@ -1,5 +1,5 @@
 {
-    "app_id": "com.moodle.moodlemobile",
+    "app_id": "hk.raineducation.app",
     "appname": "RAIN Education",
     "versioncode": 52000,
     "versionname": "5.2.0",
@@ -86,22 +86,22 @@
         "medium": 110,
         "high": 120
     },
-    "customurlscheme": "moodlemobile",
+    "customurlscheme": "raineducation",
     "sites": [],
     "multisitesdisplay": "",
     "sitefindersettings": {},
     "onlyallowlistedsites": false,
     "forcedefaultlanguage": false,
-    "privacypolicy": "https://moodle.net/moodle-app-privacy/",
-    "notificoncolor": "#f98012",
+    "privacypolicy": "https://raineducation.hk/privacy",
+    "notificoncolor": "#B28125",
     "enableanalytics": false,
     "forceColorScheme": "",
     "forceLoginLogo": false,
     "showTopLogo": "hidden",
-    "ioswebviewscheme": "moodleappfs",
+    "ioswebviewscheme": "raineducationfs",
     "appstores": {
-        "android": "com.moodle.moodlemobile",
-        "ios": "id633359593"
+        "android": "hk.raineducation.app",
+        "ios": ""
     },
     "wsrequestqueuelimit": 10,
     "wsrequestqueuedelay": 100,

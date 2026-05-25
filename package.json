@@ -1,14 +1,14 @@
 {
-    "name": "moodlemobile",
+    "name": "rain-education-app",
     "version": "5.2.0",
-    "description": "The official app for Moodle.",
+    "description": "RAIN Education mobile learning app.",
     "author": {
-        "name": "Moodle Pty Ltd.",
-        "email": "mobile@moodle.com"
+        "name": "Hong Kong Rain International Education Group Limited",
+        "email": "info@raineducation.hk"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/moodlehq/moodleapp.git"
+        "url": "https://github.com/yasin19890313/rain-education-app.git"
     },
     "license": "Apache-2.0",
     "licenses": [
@@ -212,7 +212,7 @@
             "cordova-plugin-badge": {},
             "cordova-plugin-chooser": {},
             "cordova-plugin-customurlscheme": {
-                "URL_SCHEME": "moodlemobile",
+                "URL_SCHEME": "raineducation",
                 "ANDROID_SCHEME": " ",
                 "ANDROID_HOST": " ",
                 "ANDROID_PATHPREFIX": "/"

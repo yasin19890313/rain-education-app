@@ -1,6 +1,7 @@
 6c5fe9a888f0dd43e2510a3fee3be46d94fba1f5118208df34f77b6587238b76  rain-education-website-v10-clear-global-scenes-20260612.zip
 ebed73d842dcf8d5bdc91a5a53c3fa87d29108706590206d6e30db511d820ba3  rain-education-website-v11-academic-horizons-20260612.zip
 fd2f2059ef18cd989cb57d27286ae2916b3f80d792ade2269eeecb9558f3d095  rain-education-website-v12-transparent-copy-20260612.zip
+da68f0155d9d39037f6f272ae7cf32ed461306d5a63562a5226467fbaf8eff35  rain-education-website-v13-hero-animation-20260613.zip
 511598018122ba0067a57773bf222f33e4c3f2494cd8a94b138ecddf0e590b9a  rain-education-website-v7-polish-20260610.zip
 1cedb70fbe69d41fa8579ce444a5f818cd005f1d1fb5ec25db991bd5f8c5e242  rain-education-website-v7-polish-library-bg-20260611.zip
 bb5e84b1427f47814662256f9ab0b308f0ffea3320b62f38a9e1277ffa52e2ab  rain-education-website-v7-spacious-library-20260611.zip

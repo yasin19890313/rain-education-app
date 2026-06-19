@@ -1,0 +1,17 @@
+# Local working copies are intentionally kept outside normal Git history.
+# Deployable snapshots are stored in website-versions/archives/.
+website-versions/work/
+
+# Browser automation scratch files.
+.playwright-cli/
+**/.playwright-cli/
+
+# macOS metadata.
+.DS_Store
+**/.DS_Store
+
+# These historical archives exceed GitHub's 100MB normal Git blob limit.
+# They remain on the local machine and are documented in docs/WEBSITE_STATUS.md.
+website-versions/archives/rain-education-website-v21-hero-film-upgrade-20260614.zip
+website-versions/archives/rain-education-website-v21-brand-intro-stats-grid-fix-20260614.zip
+website-versions/archives/rain-education-website-v22-final-brand-film-20260615.zip

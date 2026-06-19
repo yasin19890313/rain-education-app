@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Academic library and study illustration">
+  <defs>
+    <linearGradient id="libBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F3FBFF"/>
+      <stop offset=".62" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF4D0"/>
+    </linearGradient>
+    <linearGradient id="book" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F7BFF"/>
+      <stop offset="1" stop-color="#17B7B3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#libBg)"/>
+  <circle cx="178" cy="136" r="110" fill="#7ADDFB" opacity=".28"/>
+  <circle cx="1010" cy="164" r="128" fill="#FFD15F" opacity=".34"/>
+  <g fill="#FFFFFF" stroke="#1D5FAE" stroke-width="5" stroke-linejoin="round" opacity=".82">
+    <rect x="150" y="150" width="900" height="448" rx="28"/>
+    <path d="M230 598 V224 H970 V598"/>
+    <path d="M230 326 H970 M230 448 H970"/>
+  </g>
+  <g fill="url(#book)" opacity=".76">
+    <rect x="280" y="250" width="44" height="76" rx="8"/>
+    <rect x="340" y="238" width="58" height="88" rx="8"/>
+    <rect x="420" y="266" width="46" height="60" rx="8"/>
+    <rect x="536" y="354" width="52" height="94" rx="8"/>
+    <rect x="606" y="374" width="42" height="74" rx="8"/>
+    <rect x="740" y="250" width="52" height="76" rx="8"/>
+    <rect x="812" y="236" width="60" height="90" rx="8"/>
+    <rect x="310" y="476" width="54" height="96" rx="8"/>
+    <rect x="386" y="498" width="44" height="74" rx="8"/>
+    <rect x="766" y="486" width="54" height="86" rx="8"/>
+    <rect x="842" y="466" width="46" height="106" rx="8"/>
+  </g>
+  <g fill="none" stroke="#F39B35" stroke-width="5" stroke-linecap="round" opacity=".62">
+    <path d="M486 584 C560 526 642 526 716 584"/>
+    <path d="M552 566 V478 H650 V566"/>
+    <path d="M492 204 H708"/>
+  </g>
+</svg>

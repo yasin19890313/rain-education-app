@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="International city skyline illustration">
+  <defs>
+    <linearGradient id="cityBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DBF3FF"/>
+      <stop offset=".5" stop-color="#F8FCFF"/>
+      <stop offset="1" stop-color="#FFE6B1"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1F78FF"/>
+      <stop offset="1" stop-color="#18B8B0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#cityBg)"/>
+  <circle cx="950" cy="126" r="92" fill="#FFC857" opacity=".52"/>
+  <path d="M0 480 C200 420 336 468 514 404 C722 330 892 364 1200 234 V720 H0Z" fill="#E6F8FF"/>
+  <g fill="url(#tower)" opacity=".82">
+    <rect x="90" y="352" width="74" height="286" rx="10"/>
+    <rect x="192" y="278" width="96" height="360" rx="10"/>
+    <rect x="320" y="386" width="68" height="252" rx="10"/>
+    <rect x="430" y="318" width="90" height="320" rx="10"/>
+    <rect x="562" y="236" width="108" height="402" rx="12"/>
+    <rect x="720" y="362" width="72" height="276" rx="10"/>
+    <rect x="836" y="298" width="94" height="340" rx="10"/>
+    <rect x="984" y="388" width="74" height="250" rx="10"/>
+  </g>
+  <g fill="#FFFFFF" opacity=".74">
+    <rect x="112" y="382" width="22" height="18" rx="3"/>
+    <rect x="112" y="430" width="22" height="18" rx="3"/>
+    <rect x="224" y="314" width="24" height="18" rx="3"/>
+    <rect x="224" y="362" width="24" height="18" rx="3"/>
+    <rect x="602" y="278" width="26" height="18" rx="3"/>
+    <rect x="602" y="326" width="26" height="18" rx="3"/>
+    <rect x="874" y="336" width="24" height="18" rx="3"/>
+    <rect x="874" y="384" width="24" height="18" rx="3"/>
+  </g>
+  <g fill="none" stroke="#E9902F" stroke-width="5" stroke-linecap="round" opacity=".62">
+    <path d="M122 230 C272 132 416 150 558 224"/>
+    <path d="M640 148 C784 74 936 92 1086 176"/>
+    <path d="M616 236 V152"/>
+  </g>
+</svg>

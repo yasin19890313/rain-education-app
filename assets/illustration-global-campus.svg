@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Global university campus and city illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#BFE8FF"/>
+      <stop offset="0.45" stop-color="#F6FBFF"/>
+      <stop offset="1" stop-color="#FFE8B0"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#245BFF"/>
+      <stop offset="1" stop-color="#18B6C7"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD56A"/>
+      <stop offset="1" stop-color="#F39B35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#sky)"/>
+  <circle cx="965" cy="132" r="92" fill="url(#gold)" opacity=".45"/>
+  <circle cx="146" cy="132" r="132" fill="#6AD7FF" opacity=".25"/>
+  <path d="M0 560 C190 438 330 492 492 424 C698 336 862 382 1200 246 L1200 720 L0 720Z" fill="#D7F3FF" opacity=".76"/>
+  <path d="M0 612 C228 528 390 560 574 500 C760 438 930 432 1200 330 L1200 720 L0 720Z" fill="#FFFFFF" opacity=".78"/>
+  <g fill="none" stroke="#1C4F8F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".82">
+    <path d="M222 528 L512 352 L802 528"/>
+    <path d="M272 528 V656 H752 V528"/>
+    <path d="M338 656 V536 M424 656 V536 M510 656 V536 M596 656 V536 M682 656 V536"/>
+    <path d="M314 536 H710"/>
+    <path d="M512 352 V260"/>
+    <path d="M454 260 H570"/>
+    <path d="M512 226 C470 226 438 252 438 292 C438 334 474 352 512 352 C552 352 586 334 586 292 C586 252 554 226 512 226Z"/>
+  </g>
+  <g fill="url(#blue)" opacity=".72">
+    <rect x="842" y="404" width="54" height="252" rx="8"/>
+    <rect x="914" y="336" width="64" height="320" rx="8"/>
+    <rect x="998" y="388" width="48" height="268" rx="8"/>
+    <rect x="1064" y="296" width="70" height="360" rx="8"/>
+  </g>
+  <g fill="#FFFFFF" opacity=".64">
+    <rect x="857" y="430" width="20" height="16" rx="3"/>
+    <rect x="857" y="470" width="20" height="16" rx="3"/>
+    <rect x="936" y="366" width="22" height="16" rx="3"/>
+    <rect x="936" y="406" width="22" height="16" rx="3"/>
+    <rect x="1088" y="328" width="22" height="16" rx="3"/>
+    <rect x="1088" y="368" width="22" height="16" rx="3"/>
+  </g>
+  <g fill="none" stroke="#F39B35" stroke-width="4" opacity=".58">
+    <path d="M94 254 C238 142 338 176 474 90"/>
+    <path d="M736 166 C862 88 988 86 1114 140"/>
+  </g>
+</svg>

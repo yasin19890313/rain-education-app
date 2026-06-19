@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="University arches and academic courtyard illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8F7FF"/>
+      <stop offset=".55" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF0C6"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#23B7C9"/>
+      <stop offset="1" stop-color="#2E67FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="212" cy="178" r="132" fill="#FFD76A" opacity=".34"/>
+  <circle cx="990" cy="168" r="116" fill="#62D7F9" opacity=".28"/>
+  <g fill="#FFFFFF" stroke="#1D5FAE" stroke-width="5" stroke-linejoin="round" opacity=".84">
+    <path d="M194 598 V302 H1006 V598"/>
+    <path d="M144 302 L600 126 L1056 302Z"/>
+    <path d="M292 598 V388 C292 330 338 284 396 284 C454 284 500 330 500 388 V598"/>
+    <path d="M518 598 V388 C518 330 564 284 622 284 C680 284 726 330 726 388 V598"/>
+    <path d="M744 598 V388 C744 330 790 284 848 284 C906 284 952 330 952 388 V598"/>
+  </g>
+  <g fill="url(#teal)" opacity=".34">
+    <rect x="236" y="334" width="82" height="264" rx="40"/>
+    <rect x="462" y="334" width="82" height="264" rx="40"/>
+    <rect x="688" y="334" width="82" height="264" rx="40"/>
+    <rect x="914" y="334" width="82" height="264" rx="40"/>
+  </g>
+  <g fill="none" stroke="#F39B35" stroke-width="4" stroke-linecap="round" opacity=".62">
+    <path d="M160 650 H1040"/>
+    <path d="M252 242 H948"/>
+    <path d="M600 126 V68"/>
+    <path d="M556 68 H644"/>
+  </g>
+</svg>

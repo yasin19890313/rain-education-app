@@ -1,0 +1,17 @@
+{
+  "name": "RAIN EDUCATION",
+  "short_name": "RAIN",
+  "description": "香港瑞恩国际教育集团有限公司官网",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070604",
+  "theme_color": "#070604",
+  "icons": [
+    {
+      "src": "assets/logo-mark.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

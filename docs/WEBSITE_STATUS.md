@@ -26,19 +26,19 @@
 
 ### 当前最新官网版本
 
-- 最新版本：v24 Premium Full Consulting Home
-- 最新工作目录：`website-versions/work/rain-education-website-v24-premium-full-consulting-home`
-- 最新归档包：`website-versions/archives/rain-education-website-v24-premium-full-consulting-home-20260619.zip`
-- 最新桌面预览：`website-versions/previews/rain-v24-premium-full-consulting-home-desktop.png`
-- 最新手机预览：`website-versions/previews/rain-v24-premium-full-consulting-home-mobile.png`
-- SHA256：`77c2a62d4ae562685b23177e7a750099a2526f38f1c07e9a4bb18f40b6d1a24c`
+- 最新版本：v25 Oxbridge Consulting Home
+- 最新工作目录：`website-versions/work/rain-education-website-v25-oxbridge-consulting-home`
+- 最新归档包：`website-versions/archives/rain-education-website-v25-oxbridge-consulting-home-20260619.zip`
+- 最新桌面预览：`website-versions/previews/rain-v25-oxbridge-consulting-home-desktop.png`
+- 最新手机预览：`website-versions/previews/rain-v25-oxbridge-consulting-home-mobile.png`
+- SHA256：`6cc59b2b64babc5cc0b9b8f74e9a296bafd7bc6ffa9ee082075b7377fc2d5854`
 
 ### 使用语言与文件
 
-v24 工作目录主要文件：
+v25 工作目录主要文件：
 
-- `index.html`：首页，约 150KB，包含 46 个 section。
-- `styles.css`：全站样式，约 299KB，包含历史样式和 v24 override。
+- `index.html`：首页，约 39KB，采用 Top Navigation + 11 个内容 section，对应用户指定的 12 段首页结构。
+- `styles.css`：全站样式，约 322KB，包含历史样式、v24 override 和 v25 Oxbridge Consulting Home override。
 - `script.js`：前端交互，约 127KB。
 - `assets/`：图片、Logo、二维码、offer 图、导师图等约 115 个资源，约 72MB。
 - 其他静态页面：`associate-degree.html`、`application-guides.html`、`gpa-management.html`、`mentor-team.html`、`postgraduate-application.html`、`success-cases.html`、`privacy.html`、`service-disclaimer.html`、`thank-you.html`。
@@ -49,7 +49,7 @@ v24 工作目录主要文件：
 - 无 Tailwind。
 - 无 CSS-in-JS。
 - 无构建步骤。
-- v24 关键样式从 `styles.css` 约 `V24 premium full consulting home` 注释段开始。
+- v25 关键样式从 `styles.css` 末尾 `V25 Oxbridge-inspired consulting home` 注释段开始。
 
 ### 主要依赖
 
@@ -60,14 +60,14 @@ v24 工作目录主要文件：
 在最新 work 目录运行：
 
 ```bash
-cd website-versions/work/rain-education-website-v24-premium-full-consulting-home
-python3 -m http.server 4182 --bind 127.0.0.1
+cd website-versions/work/rain-education-website-v25-oxbridge-consulting-home
+python3 -m http.server 4183 --bind 127.0.0.1
 ```
 
 访问：
 
 ```text
-http://127.0.0.1:4182/
+http://127.0.0.1:4183/
 ```
 
 ### 构建命令
@@ -100,11 +100,11 @@ http://127.0.0.1:4182/
 ### `/` / `index.html`
 
 - 用途：首页，承载品牌定位、数据背书、服务体系、香港路径、案例、导师、信任中心、内容入口、咨询表单和联系信息。
-- 完成度：v24 当前主版本，内容完整度高。
-- 主要组件：Header、静态 Hero、数据背书、Global Pathway、香港高校 Gallery、Offer Wall、品牌故事、顾问系统、家长决策中心、服务方案、路径比较、案例库、导师团队、信任中心、活动、内容中心、FAQ、评估器、咨询表单、联系区、合规说明、Footer。
-- 当前视觉效果：静态高端咨询公司风格，深蓝/白色/香槟金；不再使用视频首屏。
-- 移动端：已在 390px 验证无横向滚动，数据卡片无溢出。
-- 是否仍需优化：需要继续整理内容节奏，减少历史叠加造成的重复感，提升整体一致性。
+- 完成度：v25 当前主版本，已按 Oxbridge Applications 参考方向重新组织为高端咨询公司式首页。
+- 主要组件：Header、全宽静态 Hero Banner、5 个等宽数据卡片、Why Rain Education、Core Programmes、Rain Pathway、咨询公司案例、Parent Decision Center、Mentor Team、Testimonials、FAQ、Enquire Today 表单与二维码、Footer。
+- 当前视觉效果：深蓝、白色、香槟金、高级灰、大留白、静态香港维港图片背景；首页不使用视频、不使用品牌宣传片、不使用地图飞线、不使用粒子动画、不使用科技感动画。
+- 移动端：已在 390px 验证无横向滚动，Hero 为 280px，数据卡片单列无溢出，表单与二维码存在。
+- 是否仍需优化：后续可继续扩展专题页内容、成功案例详情页和多语言英文文案映射。
 
 ### `/success-cases.html`
 
@@ -356,6 +356,20 @@ http://127.0.0.1:4182/
 
 检查日期：2026-06-19
 
+### v25 Oxbridge Consulting Home 检查
+
+- 命令：`node --check website-versions/work/rain-education-website-v25-oxbridge-consulting-home/script.js`
+- 结果：通过，无语法错误输出。
+- 静态资源引用检查：`index.html`、`styles.css`、`script.js` 本地引用缺失 0 个。
+- 禁用方向检查：首页与脚本未命中 `<video`、`assets/video`、`rain-education-brand-film`、`requestAnimationFrame`、`heroPathway`、`map-surface`、`global-route-animation`、`particle`、`canvas`。
+- 本地预览：`curl -I http://127.0.0.1:4183/` 返回 HTTP 200 OK。
+- Playwright 四断点检查：1440、1024、768、390 宽度均 `overflowX = 0`；首页内容为导航 + 11 个内容 section；视频 0；canvas 0；FAQ 8 个；表单存在；二维码 2 个。
+- Hero 尺寸：桌面 1440/1024/768 宽度为 420px 高；390px 手机为 280px 高。
+- 数据卡片：桌面 5 列，1024/768 为 3 列换行，390px 为 1 列；数字和说明分行展示，无文字溢出。
+- 预览图：`website-versions/previews/rain-v25-oxbridge-consulting-home-desktop.png`、`website-versions/previews/rain-v25-oxbridge-consulting-home-mobile.png` 已生成并人工查看。
+- zip 完整性：`unzip -tq website-versions/archives/rain-education-website-v25-oxbridge-consulting-home-20260619.zip` 通过。
+- SHA256：`6cc59b2b64babc5cc0b9b8f74e9a296bafd7bc6ffa9ee082075b7377fc2d5854`。
+
 ### Git 状态检查
 
 - 命令：`git status -sb`
@@ -428,4 +442,3 @@ http://127.0.0.1:4182/
   - `review/v23-premium-consulting-home`
 - 当前任务目标：提交 docs 文档、README、SHA 更新、可推送的归档包和预览图到 `Rain-Education-Website` 分支。
 - 当前限制：不使用 Git LFS 的情况下，超过 100MB 的历史 zip 不推入普通 Git 历史。
-

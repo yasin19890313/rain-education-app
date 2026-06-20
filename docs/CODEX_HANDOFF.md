@@ -1,6 +1,6 @@
 # Codex Handoff For Rain Education Website
 
-最后更新：2026-06-19
+最后更新：2026-06-20
 
 这份文件专门给新 Codex 窗口看。接手时不要从旧聊天猜上下文，先读这些文档和当前代码。
 
@@ -21,122 +21,125 @@
 
 当前最新官网版本：
 
-- 版本：v25 Oxbridge Consulting Home
-- 本地工作目录：`website-versions/work/rain-education-website-v25-oxbridge-consulting-home`
-- 最新部署包：`website-versions/archives/rain-education-website-v25-oxbridge-consulting-home-20260619.zip`
-- 最新桌面预览：`website-versions/previews/rain-v25-oxbridge-consulting-home-desktop.png`
-- 最新手机预览：`website-versions/previews/rain-v25-oxbridge-consulting-home-mobile.png`
-- SHA256：`6cc59b2b64babc5cc0b9b8f74e9a296bafd7bc6ffa9ee082075b7377fc2d5854`
+- 版本：v26 Brand Consistency & Performance
+- 本地工作目录：`website-versions/work/rain-education-website-v26-brand-consistency-performance`
+- 最新部署包：`website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
+- 最新桌面预览：`website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
+- 最新手机预览：`website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
+- SHA256：`7841fd5d4d182c23bfcbd0f64d5b2b7adf05fb44a730f3e7aa35373fa55c47bc`
 
-注意：`website-versions/work/` 被 Git 忽略，长期 GitHub 固化依赖部署 zip、预览图、README 和 docs 文档。需要修改页面时，在最新 work 目录中改，验证后重新打包到 archives。
+注意：`website-versions/work/` 被 Git 忽略，GitHub 固化依赖部署 zip、预览图、README 和 docs 文档。需要改页面时，在最新 work 目录中改，验证后重新打包到 archives。
 
-### v25 本轮关键说明
+## 3. v26 本轮关键说明
 
-- v25 根据用户最新战略调整继续固化：官网首页不使用视频、不使用品牌宣传片、不使用地图飞线、不使用粒子动画、不使用科技感动画；宣传片仅作为独立外发资产。
-- v25 参考 Oxbridge Applications 的高端咨询公司表达方式，但不照抄视觉、颜色或布局。
-- 首页结构为 Top Navigation + 11 个内容 section，对应用户要求的 12 段结构：Hero Banner、Trust Metrics、Why Rain Education、Core Programmes、Rain Pathway、Success Cases、Parent Decision Center、Mentor Team、Testimonials、FAQ、Enquire Today。
-- Hero 为全宽静态香港维港 Banner，桌面高度 420px，手机高度 280px；中央显示“以香港為起點 / 通往世界名校”和英文标题。
-- 数据背书为 5 个独立等宽高端卡片：15年+、5000+、92%、100%、31%，数字与说明分行。
-- Core Programmes 保留港八副学士 2+2+1、港九大本硕连读、香港本科、香港硕士、英国 G5、新加坡、GPA 管理与背景提升。
-- 成功案例改为咨询公司案例逻辑，展示学生背景、挑战、规划策略、最终结果和关键支持，不再只是 Offer Wall。
-- Mentor Team 使用导师照片、院校背景、擅长方向和服务模块，不做廉价头像墙。
-- FAQ 至少 8 个；Enquire Today 包含 Netlify 表单、微信、WhatsApp、电话、邮箱和二维码。
-- v25 验证：`node --check` 通过；本地引用缺失 0；1440/1024/768/390 Playwright 检查均无横向滚动；视频 0；canvas 0；FAQ 8；表单存在；二维码 2。
+- v26 在 v25 Oxbridge Consulting Home 基础上迭代，不是重写。
+- Header 改为平直、白色、轻量、学院型导航。
+- Header 和子页面 header 使用官方完整 Logo 文件，不拆分图标、不重绘、不手打替代品牌组合。
+- Hero 保留香港维港静态横幅，只保留主标题和英文标题。
+- 公司介绍与 CTA 已移到 Hero 下方 Introduction Section。
+- Hero 下新增 Oxbridge 式 Section Navigation。
+- Trust Metrics 第二屏文案改为“以结果为目标，以路径管理不确定性”。
+- 默认简体模式统一简体；繁体模式统一繁体；英文模式已验证无中文残留。
+- 手机端数据卡为 2 + 2 + 1，最后一张通栏。
+- Core Programmes 扩展为 9 个，补回国际名校申请规划和长期学业与职业发展规划。
+- 新增 Trust Center，保留信任中心、合规说明、隐私保护、案例匿名化和结果边界。
+- 性能清理后 zip 从 v25 的 71MB 降到 v26 的 3.5MB。
 
-## 3. 新窗口接手后的第一步
+## 4. 保留内容红线
 
-接手后先做：
+后续不要删除这些内容：
+
+- 港八副学士 2+2+1
+- 港九大本硕连读
+- 香港本科
+- 香港研究生 / 硕士
+- 英国 G5
+- 新加坡
+- GPA 管理
+- 国际名校申请
+- 长期学业与职业规划
+- 成功案例
+- 导师团队
+- 家长痛点
+- 信任中心
+- FAQ
+- 咨询表单
+- 微信、WhatsApp、电话、邮箱和二维码
+
+## 5. 用户明确否定的方向
+
+不要恢复：
+
+- 官网首页视频
+- 品牌宣传片放在首页
+- 地图飞线
+- 粒子动画
+- 科技感动画
+- SaaS 感悬浮卡片 Header
+- 廉价招生落地页
+- 内容很少的咨询模板
+- 普通留学中介表达
+
+官网必须继续像：高端教育咨询集团、高端升学规划机构、国际教育品牌、长期学术规划顾问。
+
+## 6. 新窗口接手后的第一步
 
 1. 运行 `git status -sb`，确认分支和未提交改动。
 2. 进入最新 work 目录。
-3. 用静态服务器运行项目，例如：
+3. 启动静态服务：
 
 ```bash
-cd website-versions/work/rain-education-website-v25-oxbridge-consulting-home
-python3 -m http.server 4183 --bind 127.0.0.1
+cd website-versions/work/rain-education-website-v26-brand-consistency-performance
+python3 -m http.server 4186 --bind 127.0.0.1
 ```
 
-4. 打开 `http://127.0.0.1:4183/` 检查当前页面。
+4. 打开：
+
+```text
+http://127.0.0.1:4186/
+```
+
 5. 对照 docs 文档检查是否偏离用户要求。
 
-不要贸然大改：
+## 7. 当前质量检查命令
 
-- 不要删除已有内容。
-- 不要重写整个项目。
-- 不要替换 Logo。
-- 不要把宣传片放回首页。
-- 不要把官网做短。
-- 不要只为了视觉高级感牺牲内容完整度。
-
-## 4. 用户核心偏好
-
-用户明确偏好：
-
-- 高端。
-- 内容完整。
-- 强咨询转化。
-- 香港升学路径清晰。
-- 数据背书可信。
-- 不要瞎删。
-- 不要廉价。
-- 不要低清图片。
-- Logo 不能变。
-- 官网不放视频。
-- 宣传片独立制作和分发。
-
-用户已经明确否定：
-
-- v23 过度简化方向。
-- 首屏品牌宣传片视频方向。
-- 地图飞线 / 路线动画 / 科技 HUD。
-- 内容很少的咨询公司模板。
-- 廉价留学中介风。
-
-## 5. 后续每次大改前必须做
-
-每次大改前：
-
-1. 说明改动范围。
-2. 确认当前最新版本和部署包。
-3. 备份或提交当前版本。
-4. 只做小范围、高质量、可回滚修改。
-
-每次大改后：
-
-1. 运行静态检查。
-2. 运行本地预览。
-3. 检查桌面和手机。
-4. 重新生成预览图。
-5. 重新生成部署 zip。
-6. 计算 SHA256。
-7. 更新 `README.md`、`website-versions/SHA256SUMS.txt`、`docs/WEBSITE_STATUS.md`。
-8. 更新 `/Users/daiyali/Desktop/Rain-Education-Codex-HANDOFF.md` 并同步副本到桌面总汇总文件夹。
-9. 提交 GitHub。
-
-## 6. 当前质量检查命令
-
-因为项目没有 `package.json`，不要假装存在 npm build/lint。
+项目没有 `package.json`，不要假装存在 npm build/lint。
 
 可用检查：
 
 ```bash
-node --check website-versions/work/rain-education-website-v25-oxbridge-consulting-home/script.js
-python3 -m http.server 4183 --bind 127.0.0.1
-curl -I http://127.0.0.1:4183/
-unzip -tq website-versions/archives/rain-education-website-v25-oxbridge-consulting-home-20260619.zip
+node --check website-versions/work/rain-education-website-v26-brand-consistency-performance/script.js
+python3 -m http.server 4186 --bind 127.0.0.1
+unzip -tq website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip
 cd website-versions/archives && shasum -a 256 -c ../SHA256SUMS.txt
 ```
 
-如果使用 Playwright，应至少检查 1440、1024、768、390 宽度。
+Playwright 至少检查：1440、1024、768、390 宽度；无横向滚动；无 video/canvas；FAQ 8；表单存在；语言切换可用；案例筛选和导师筛选可用。
 
-## 7. 新窗口可复制启动语
+## 8. v26 验证摘要
 
-请先阅读以下文件：
+- `node --check`：通过。
+- 桌面 1440 x 1200：overflowX 0，Hero 420px，5 个数据卡等宽，FAQ 8，表单存在，broken images 0，404 0。
+- 手机 390 x 920：overflowX 0，Hero 260px，章节导航横滑，数据卡 2+2+1，表单存在。
+- 英文模式：中文字符 0，fallback 0。
+- 首页视频：0。
+- canvas：0。
+- v26 zip：3.5MB。
+- 首屏资源估算：496.4KB。
 
-1. `docs/RAIN_EDUCATION_MASTER_CONTEXT.md`
-2. `docs/WEBSITE_STATUS.md`
-3. `docs/WEBSITE_DESIGN_RULES.md`
-4. `docs/WEBSITE_ROADMAP.md`
-5. `docs/CODEX_HANDOFF.md`
+## 9. 每次完成版本必须做
 
-然后运行项目，检查当前官网状态，不要重写项目，不要删除已有内容，在完全理解现有进度后继续开发。
+1. 修改只发生在最新 work 目录。
+2. 运行本地预览和桌面/手机 QA。
+3. 生成桌面端预览图。
+4. 生成手机端预览图。
+5. 生成部署 zip。
+6. 计算 SHA256 并更新 `website-versions/SHA256SUMS.txt`。
+7. 更新 `README.md`、`docs/WEBSITE_STATUS.md`、`docs/CODEX_HANDOFF.md`。
+8. commit 并 push 到 `Rain-Education-Website`。
+
+## 10. GitHub
+
+- Remote：`https://github.com/yasin19890313/rain-education-app.git`
+- Branch：`Rain-Education-Website`
+- Branch URL：`https://github.com/yasin19890313/rain-education-app/tree/Rain-Education-Website`

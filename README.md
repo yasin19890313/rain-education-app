@@ -4,7 +4,7 @@ Rain Education 官网项目长期归档与交接仓库。
 
 本仓库保存香港瑞恩国际教育集团有限公司（HONG KONG RAIN INTERNATIONAL EDUCATION GROUP LIMITED）官网在 2026 年 6 月 redesign 过程中的部署包、预览图、校验值和长期接力文档。
 
-当前最新版本是 **v25 Oxbridge Consulting Home**。它在 v24 完整内容基础上重新组织首页结构，不再使用首页视频、品牌宣传片、地图飞线、粒子或科技感动画，定位为高端、克制、国际化、咨询公司风格的升学规划集团官网。
+当前最新版本是 **v26 Brand Consistency & Performance**。它在 v25 Oxbridge Consulting Home 基础上修正 Header、Hero、章节导航、Introduction、语言一致性、移动端数据卡和资源体积，继续保持高端教育咨询集团 / 国际升学规划机构定位。
 
 ## Live Site
 
@@ -47,46 +47,46 @@ docs/
 
 website-versions/
   archives/
-    rain-education-website-v25-oxbridge-consulting-home-20260619.zip
+    rain-education-website-v26-brand-consistency-performance-20260620.zip
   previews/
-    rain-v25-oxbridge-consulting-home-desktop.png
-    rain-v25-oxbridge-consulting-home-mobile.png
+    rain-v26-brand-consistency-performance-desktop.png
+    rain-v26-brand-consistency-performance-mobile.png
   SHA256SUMS.txt
   work/                     # local working copies, intentionally ignored by Git
 ```
 
 ## Latest Version
 
-- Version: `v25 Oxbridge Consulting Home`
-- Archive: `website-versions/archives/rain-education-website-v25-oxbridge-consulting-home-20260619.zip`
-- SHA256: `6cc59b2b64babc5cc0b9b8f74e9a296bafd7bc6ffa9ee082075b7377fc2d5854`
-- Desktop preview: `website-versions/previews/rain-v25-oxbridge-consulting-home-desktop.png`
-- Mobile preview: `website-versions/previews/rain-v25-oxbridge-consulting-home-mobile.png`
+- Version: `v26 Brand Consistency & Performance`
+- Archive: `website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
+- SHA256: `7841fd5d4d182c23bfcbd0f64d5b2b7adf05fb44a730f3e7aa35373fa55c47bc`
+- Desktop preview: `website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
+- Mobile preview: `website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
 
-The latest v25 package uses:
+The latest v26 package uses:
 
-- `styles.css?v=20260619-v25-oxbridge-consulting-home`
-- `script.js?v=20260619-v25-oxbridge-consulting-home`
+- `styles.css?v=20260619-v26-brand-consistency-performance`
+- `script.js?v=20260619-v26-brand-consistency-performance`
 
 ## Local Preview
 
 The latest editable working copy is local-only:
 
 ```text
-website-versions/work/rain-education-website-v25-oxbridge-consulting-home
+website-versions/work/rain-education-website-v26-brand-consistency-performance
 ```
 
 Run it locally:
 
 ```bash
-cd website-versions/work/rain-education-website-v25-oxbridge-consulting-home
-python3 -m http.server 4183 --bind 127.0.0.1
+cd website-versions/work/rain-education-website-v26-brand-consistency-performance
+python3 -m http.server 4186 --bind 127.0.0.1
 ```
 
 Open:
 
 ```text
-http://127.0.0.1:4183/
+http://127.0.0.1:4186/
 ```
 
 Because `website-versions/work/` is intentionally ignored by Git, GitHub readers should use the latest zip package and the docs folder as the source of truth unless they are working on the same local machine.
@@ -184,4 +184,5 @@ They remain on the user's local machine and are documented in `docs/WEBSITE_STAT
 | v22 final brand film | `rain-education-website-v22-final-brand-film-20260615.zip` | Uses final Rain Education brand film. Local-only oversized archive unless LFS is configured. |
 | v23 premium consulting home | `rain-education-website-v23-premium-consulting-home-20260619.zip` | Simplified consulting-home draft. User later rejected it as too short and content-light. |
 | v24 premium full consulting home | `rain-education-website-v24-premium-full-consulting-home-20260619.zip` | Restores complete content and removes homepage video/canvas animation while keeping high-end consulting style. |
-| v25 Oxbridge consulting home | `rain-education-website-v25-oxbridge-consulting-home-20260619.zip` | Latest version. Reorganizes the homepage into a high-end consulting-company structure with static hero banner, case logic, mentor credibility, FAQ and Enquire Today conversion. |
+| v25 Oxbridge consulting home | `rain-education-website-v25-oxbridge-consulting-home-20260619.zip` | Reorganizes the homepage into a high-end consulting-company structure with static hero banner, case logic, mentor credibility, FAQ and Enquire Today conversion. |
+| v26 Brand Consistency & Performance | `rain-education-website-v26-brand-consistency-performance-20260620.zip` | Latest version. Refines Oxbridge-style header, hero, section navigation, Introduction, language consistency, mobile metrics, asset cleanup, and reduces zip from 71MB to 3.5MB. |

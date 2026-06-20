@@ -44,8 +44,8 @@ button, input, select, textarea { font: inherit; }
 .menu-toggle { appearance: none; background: transparent; border: 0; cursor: pointer; display: none; height: 36px; padding: 0; width: 36px; }
 .menu-toggle span { background: var(--ink); display: block; height: 1px; margin: 7px auto; width: 22px; }
 
-.v26-hero-banner { align-items: center; background-image: url("assets/hero-academic-advisory-pexels-5311406.webp"); background-position: center 55%; background-size: cover; display: grid; height: clamp(320px, 28vw, 360px); isolation: isolate; justify-items: stretch; overflow: hidden; position: relative; text-align: left; }
-.v26-hero-overlay { background: linear-gradient(90deg, rgba(5, 24, 45, 0.74), rgba(5, 24, 45, 0.58) 31%, rgba(5, 24, 45, 0.28) 58%, rgba(5, 24, 45, 0.04) 100%), linear-gradient(180deg, rgba(8, 26, 45, 0.06), rgba(8, 26, 45, 0.16)); inset: 0; position: absolute; z-index: -1; }
+.v26-hero-banner { align-items: center; background-image: url("assets/bg-hong-kong-clear-v10.webp"); background-position: center; background-size: cover; display: grid; height: clamp(320px, 28vw, 360px); isolation: isolate; justify-items: stretch; overflow: hidden; position: relative; text-align: left; }
+.v26-hero-overlay { background: linear-gradient(90deg, rgba(5, 24, 45, 0.48), rgba(5, 24, 45, 0.38) 34%, rgba(5, 24, 45, 0.18) 66%, rgba(5, 24, 45, 0.04) 100%), linear-gradient(180deg, rgba(8, 26, 45, 0.04), rgba(8, 26, 45, 0.14)); inset: 0; position: absolute; z-index: -1; }
 .v26-hero-content { color: #fff; margin: 0 auto; max-width: 1280px; padding: 0 44px; text-shadow: 0 2px 14px rgba(0,0,0,0.22); width: 100%; }
 .v26-hero-content h1 { font-family: var(--hero-cn-serif); font-size: clamp(4rem, 5vw, 4.5rem); font-weight: 550; letter-spacing: 0; line-height: 1.08; margin: 0; max-width: 720px; }
 .v26-hero-en { color: rgba(255,255,255,0.9); font-family: var(--hero-en-serif); font-size: clamp(1rem, 1.35vw, 1.24rem); letter-spacing: 0.01em; margin: 18px 0 0; max-width: 540px; }
@@ -122,8 +122,17 @@ dd { color: var(--muted); margin: 0; }
 
 .mentor-grid { display: grid; gap: 20px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 auto; max-width: 1180px; }
 .mentor-card { background: #fff; border: 1px solid var(--line); padding: 0 0 24px; overflow: hidden; }
-.mentor-photo { aspect-ratio: 4 / 3; background: var(--soft-blue); margin: 0; overflow: hidden; }
-.mentor-photo img { height: 100%; object-fit: cover; object-position: center top; width: 100%; }
+.mentor-photo { aspect-ratio: 4 / 5; background: #f5f2ec; margin: 0; overflow: hidden; }
+.mentor-photo img { display: block; height: 100%; object-fit: contain; object-position: center center; width: 100%; }
+.mentor-photo--alison-ballance img { object-fit: contain; object-position: center center; }
+.mentor-photo--bodan-ding img { object-fit: contain; object-position: center 42%; }
+.mentor-photo--minting-luo img { object-fit: contain; object-position: center center; }
+.mentor-photo--qi-miao img { object-fit: contain; object-position: center 44%; }
+.mentor-photo--ruiyi-ren img { object-fit: contain; object-position: center 48%; }
+.mentor-photo--xiaoyu-sun img { object-fit: contain; object-position: center 42%; }
+.mentor-photo--wenhuai-wu img { object-fit: contain; object-position: center 46%; }
+.mentor-photo--olivia-zhang img { object-fit: cover; object-position: center 38%; }
+.mentor-photo--sophia-chen img { object-fit: cover; object-position: center 40%; }
 .mentor-top { align-items: center; display: flex; gap: 14px; padding: 22px 24px 10px; }
 .mentor-avatar { align-items: center; background: var(--navy); color: #fff; display: inline-flex; flex: 0 0 44px; font-size: 0.82rem; font-weight: 800; height: 44px; justify-content: center; width: 44px; }
 .mentor-top h3 { font-size: 1.24rem; margin-bottom: 4px; }
@@ -227,8 +236,8 @@ details p { color: var(--muted); margin-bottom: 0; }
   .language-switcher { gap: 8px; }
   .language-switcher button { font-size: 0.66rem; }
   .nav-links { top: 82px; }
-  .v26-hero-banner { height: clamp(250px, 70vw, 290px); background-position: 48% 54%; }
-  .v26-hero-overlay { background: linear-gradient(90deg, rgba(5, 24, 45, 0.78), rgba(5, 24, 45, 0.48) 58%, rgba(5, 24, 45, 0.12) 100%); }
+  .v26-hero-banner { height: clamp(250px, 70vw, 290px); background-position: center; }
+  .v26-hero-overlay { background: linear-gradient(90deg, rgba(5, 24, 45, 0.49), rgba(5, 24, 45, 0.36) 58%, rgba(5, 24, 45, 0.12) 100%); }
   .v26-hero-content { padding: 0 24px; }
   .v26-hero-content h1 { font-size: clamp(2.625rem, 11vw, 3rem); line-height: 1.08; max-width: 340px; }
   .v26-hero-en { font-size: 0.92rem; margin-top: 14px; max-width: 300px; }

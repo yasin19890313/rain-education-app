@@ -11,8 +11,7 @@ This v27 review package uses only assets that are referenced by the current stat
 
 ## Hero Image
 
-- Academic advisory hero image: `assets/hero-academic-advisory-pexels-5311406.webp`, adapted and compressed from Pexels photo 5311406, “Two women studying with notebooks and pens in a tutoring session,” credited on Pexels to www.kaboompics.com / Karola G. Pexels marks the image as Free to use and allows modification without required attribution.
-- Hong Kong Victoria Harbour image: `assets/bg-hong-kong-clear-v10.webp`, retained from the approved no-video website asset set for metadata and fallback use.
+- Hong Kong Victoria Harbour image: `assets/bg-hong-kong-clear-v10.webp`, restored from the approved v26 no-video website asset set for the homepage hero, metadata image, and preload image.
 
 ## Performance Note
 

@@ -4,7 +4,9 @@ Rain Education 官网项目长期归档与交接仓库。
 
 本仓库保存香港瑞恩国际教育集团有限公司（HONG KONG RAIN INTERNATIONAL EDUCATION GROUP LIMITED）官网在 2026 年 6 月 redesign 过程中的部署包、预览图、校验值和长期接力文档。
 
-当前最新版本是 **v26 Brand Consistency & Performance**。它在 v25 Oxbridge Consulting Home 基础上修正 Header、Hero、章节导航、Introduction、语言一致性、移动端数据卡和资源体积，继续保持高端教育咨询集团 / 国际升学规划机构定位。
+当前正式开发版本是 **v28.2 Parent-facing Copy & Credibility Release Candidate**。它由 `review/v28-parent-facing-copy-polish` 审核分支合并而来，来源审核 commit 为 `0d116f8c8a4b5066eff38a09dee7cc4b43de446a`。
+
+v26 Brand Consistency & Performance 仍作为上一轮正式生产基准完整保留，归档包、预览图和文档不删除、不覆盖。当前尚未部署 `rainedu.hk`，线上更新仍需用户最终本地验收后手动执行。
 
 ## Live Site
 
@@ -55,7 +57,18 @@ website-versions/
   work/                     # local working copies, intentionally ignored by Git
 ```
 
-## Latest Version
+## Current Release Candidate
+
+- 当前正式开发版本：`v28.2 Parent-facing Copy & Credibility Release Candidate`
+- 来源审核分支：`review/v28-parent-facing-copy-polish`
+- 合并来源 commit：`0d116f8c8a4b5066eff38a09dee7cc4b43de446a`
+- Archive: `website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip`
+- SHA256: `2f1686aeb665fbff0ea497bb7c54c81f6c646fa089fe6cf60050f6d648cb44f3`
+- Desktop preview: `website-versions/previews/rain-v28-2-parent-facing-release-candidate-desktop-1440.png`
+- Mobile preview: `website-versions/previews/rain-v28-2-parent-facing-release-candidate-mobile-390.png`
+- 部署状态：尚未部署 `rainedu.hk`。
+
+## Previous Production Baseline
 
 - Version: `v26 Brand Consistency & Performance`
 - Archive: `website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
@@ -63,30 +76,35 @@ website-versions/
 - Desktop preview: `website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
 - Mobile preview: `website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
 
-The latest v26 package uses:
+## Current Review Product Naming
 
-- `styles.css?v=20260619-v26-brand-consistency-performance`
-- `script.js?v=20260619-v26-brand-consistency-performance`
+The current v28.2 release candidate uses the confirmed product name:
+
+- 简体：港九大本硕连读精英规划计划
+- 繁体：港九大本碩連讀精英規劃計劃
+- English: Hong Kong Nine Universities Bachelor–Master Elite Planning Programme
+
+Current public release candidate pages should not use the previous wording for this product.
 
 ## Local Preview
 
-The latest editable working copy is local-only:
+The current v28.2 editable release candidate working copy is local-only:
 
 ```text
-website-versions/work/rain-education-website-v26-brand-consistency-performance
+website-versions/work/rain-education-website-v28-parent-facing-copy-polish
 ```
 
 Run it locally:
 
 ```bash
-cd website-versions/work/rain-education-website-v26-brand-consistency-performance
-python3 -m http.server 4186 --bind 127.0.0.1
+cd website-versions/work/rain-education-website-v28-parent-facing-copy-polish
+python3 -m http.server 4288 --bind 0.0.0.0
 ```
 
 Open:
 
 ```text
-http://127.0.0.1:4186/
+http://127.0.0.1:4288/
 ```
 
 Because `website-versions/work/` is intentionally ignored by Git, GitHub readers should use the latest zip package and the docs folder as the source of truth unless they are working on the same local machine.
@@ -185,4 +203,5 @@ They remain on the user's local machine and are documented in `docs/WEBSITE_STAT
 | v23 premium consulting home | `rain-education-website-v23-premium-consulting-home-20260619.zip` | Simplified consulting-home draft. User later rejected it as too short and content-light. |
 | v24 premium full consulting home | `rain-education-website-v24-premium-full-consulting-home-20260619.zip` | Restores complete content and removes homepage video/canvas animation while keeping high-end consulting style. |
 | v25 Oxbridge consulting home | `rain-education-website-v25-oxbridge-consulting-home-20260619.zip` | Reorganizes the homepage into a high-end consulting-company structure with static hero banner, case logic, mentor credibility, FAQ and Enquire Today conversion. |
-| v26 Brand Consistency & Performance | `rain-education-website-v26-brand-consistency-performance-20260620.zip` | Latest version. Refines Oxbridge-style header, hero, section navigation, Introduction, language consistency, mobile metrics, asset cleanup, and reduces zip from 71MB to 3.5MB. |
+| v26 Brand Consistency & Performance | `rain-education-website-v26-brand-consistency-performance-20260620.zip` | Previous production baseline. Refines Oxbridge-style header, hero, section navigation, Introduction, language consistency, mobile metrics, asset cleanup, and reduces zip from 71MB to 3.5MB. |
+| v28.2 Parent-facing Copy & Credibility Release Candidate | `rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip` | Current formal development version and deployment candidate. Merged from `review/v28-parent-facing-copy-polish` at `0d116f8c8a4b5066eff38a09dee7cc4b43de446a`; not deployed to `rainedu.hk`. |

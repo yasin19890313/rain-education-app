@@ -1,6 +1,6 @@
 # Rain Education Website Status
 
-最后更新：2026-06-20
+最后更新：2026-06-21
 
 这份文件记录 Rain Education 官网当前真实进度、技术架构、页面状态、版本差异、性能数据、验证结果和 GitHub 状态。
 
@@ -27,28 +27,40 @@
 - 静态图片、完整官方 Logo、导师图、二维码、offer 图
 - `python3 -m http.server` 本地预览
 
-## 2. 当前最新官网版本
+## 2. 当前正式开发版本与上一生产基准
 
-- 最新版本：v26 Brand Consistency & Performance
-- 最新工作目录：`website-versions/work/rain-education-website-v26-brand-consistency-performance`
-- 最新归档包：`website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
-- 最新桌面预览：`website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
-- 最新手机预览：`website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
-- SHA256：`7841fd5d4d182c23bfcbd0f64d5b2b7adf05fb44a730f3e7aa35373fa55c47bc`
-- 分支：`Rain-Education-Website`
+- 当前正式开发版本：v28.2 Parent-facing Copy & Credibility Release Candidate
+- 来源审核分支：`review/v28-parent-facing-copy-polish`
+- 合并来源 commit：`0d116f8c8a4b5066eff38a09dee7cc4b43de446a`
+- 当前工作目录：`website-versions/work/rain-education-website-v28-parent-facing-copy-polish`
+- 当前部署候选包：`website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip`
+- 当前部署候选包 SHA256：`2f1686aeb665fbff0ea497bb7c54c81f6c646fa089fe6cf60050f6d648cb44f3`
+- 当前桌面预览：`website-versions/previews/rain-v28-2-parent-facing-release-candidate-desktop-1440.png`
+- 当前手机预览：`website-versions/previews/rain-v28-2-parent-facing-release-candidate-mobile-390.png`
+- 当前尚未部署 `rainedu.hk`。
+- 生产开发分支：`Rain-Education-Website`
 - 远端：`https://github.com/yasin19890313/rain-education-app.git`
 
-本地预览：
+上一生产基准版本：
+
+- 版本：v26 Brand Consistency & Performance
+- v26 工作目录：`website-versions/work/rain-education-website-v26-brand-consistency-performance`
+- v26 归档包：`website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
+- v26 桌面预览：`website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
+- v26 手机预览：`website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
+- SHA256：`7841fd5d4d182c23bfcbd0f64d5b2b7adf05fb44a730f3e7aa35373fa55c47bc`
+
+v28.2 本地预览：
 
 ```bash
-cd website-versions/work/rain-education-website-v26-brand-consistency-performance
-python3 -m http.server 4186 --bind 127.0.0.1
+cd website-versions/work/rain-education-website-v28-parent-facing-copy-polish
+python3 -m http.server 4292 --bind 0.0.0.0
 ```
 
 打开：
 
 ```text
-http://127.0.0.1:4186/
+http://127.0.0.1:4292/
 ```
 
 ## 3. v26 本轮完成内容
@@ -118,7 +130,7 @@ Hero 下方新增 Oxbridge 式页面章节导航：
 v26 在核心项目区从 v25 的 7 个服务卡扩展为 9 个：
 
 1. 港八副学士 2+2+1 名校跃升计划
-2. 港九大本硕连读精英保送计划
+2. 港九大本硕连读精英规划计划
 3. 香港本科申请
 4. 香港研究生 / 硕士申请
 5. 英国 G5 申请
@@ -173,7 +185,7 @@ v26 在核心项目区从 v25 的 7 个服务卡扩展为 9 个：
 ### v26 明确继续保留的业务内容
 
 - 港八副学士 2+2+1
-- 港九大本硕连读
+- 港九大本硕连读精英规划计划
 - 香港本科
 - 香港研究生 / 硕士
 - 英国 G5
@@ -322,4 +334,5 @@ Playwright 资源记录中首屏图片资源为 Hero + Logo + favicon，encoded 
 
 - 当前仓库：`https://github.com/yasin19890313/rain-education-app.git`
 - 当前分支：`Rain-Education-Website`
-- 本次 v26 需要提交并 push 到 `origin/Rain-Education-Website`。
+- 当前正式开发版本 v28.2 已合并到 `Rain-Education-Website` 后作为部署候选管理。
+- 当前尚未部署 `rainedu.hk`，需等待用户最终本地验收后再执行线上部署。

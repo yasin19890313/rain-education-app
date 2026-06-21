@@ -1,6 +1,6 @@
 # Codex Handoff For Rain Education Website
 
-最后更新：2026-06-20
+最后更新：2026-06-21
 
 这份文件专门给新 Codex 窗口看。接手时不要从旧聊天猜上下文，先读这些文档和当前代码。
 
@@ -19,13 +19,24 @@
 
 这个仓库是 Rain Education 官网版本归档仓库，不是 Next.js、Vite 或 npm 构建型项目。
 
-当前最新官网版本：
+当前正式开发版本：
+
+- 版本：v28.2 Parent-facing Copy & Credibility Release Candidate
+- 来源审核分支：`review/v28-parent-facing-copy-polish`
+- 合并来源 commit：`0d116f8c8a4b5066eff38a09dee7cc4b43de446a`
+- 本地工作目录：`website-versions/work/rain-education-website-v28-parent-facing-copy-polish`
+- 部署候选包：`website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip`
+- SHA256：`2f1686aeb665fbff0ea497bb7c54c81f6c646fa089fe6cf60050f6d648cb44f3`
+- 桌面预览：`website-versions/previews/rain-v28-2-parent-facing-release-candidate-desktop-1440.png`
+- 手机预览：`website-versions/previews/rain-v28-2-parent-facing-release-candidate-mobile-390.png`
+- 当前尚未部署 `rainedu.hk`。
+
+上一生产基准版本：
 
 - 版本：v26 Brand Consistency & Performance
-- 本地工作目录：`website-versions/work/rain-education-website-v26-brand-consistency-performance`
-- 最新部署包：`website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
-- 最新桌面预览：`website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
-- 最新手机预览：`website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
+- 部署包：`website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
+- 桌面预览：`website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
+- 手机预览：`website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
 - SHA256：`7841fd5d4d182c23bfcbd0f64d5b2b7adf05fb44a730f3e7aa35373fa55c47bc`
 
 注意：`website-versions/work/` 被 Git 忽略，GitHub 固化依赖部署 zip、预览图、README 和 docs 文档。需要改页面时，在最新 work 目录中改，验证后重新打包到 archives。
@@ -50,7 +61,7 @@
 后续不要删除这些内容：
 
 - 港八副学士 2+2+1
-- 港九大本硕连读
+- 港九大本硕连读精英规划计划
 - 香港本科
 - 香港研究生 / 硕士
 - 英国 G5

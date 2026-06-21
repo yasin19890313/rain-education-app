@@ -1,8 +1,20 @@
 # Rain Education Website Roadmap
 
-最后更新：2026-06-19
+最后更新：2026-06-21
 
 这份文件记录 Rain Education 官网后续开发路线图。优先级按 P0、P1、P2 排列。
+
+## 当前版本状态
+
+- 当前正式开发版本：v28.2 Parent-facing Copy & Credibility Release Candidate
+- 来源审核分支：`review/v28-parent-facing-copy-polish`
+- 合并来源 commit：`0d116f8c8a4b5066eff38a09dee7cc4b43de446a`
+- 当前正式分支：`Rain-Education-Website`
+- 当前部署候选包：`website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip`
+- 当前部署候选包 SHA256：`2f1686aeb665fbff0ea497bb7c54c81f6c646fa089fe6cf60050f6d648cb44f3`
+- 当前尚未部署 `rainedu.hk`。
+
+v26 Brand Consistency & Performance 作为上一生产基准完整保留；后续路线图项应以 v28.2 RC 的首页结构、9 名导师、香港维港 Hero、家长视角文案和可信度边界为基础继续推进。
 
 ## P0 最高优先级
 
@@ -135,4 +147,3 @@
 - 当前状态：宣传片不在官网首页；v22 曾用于品牌片首屏，但已被 v24 否定。
 - 为什么重要：宣传片仍是品牌资产，可用于家长、合作伙伴、学校和招生渠道。
 - 建议下一步：如果用户需要，单独做 `/brand-film.html` 或私密分享页，不能影响首页定位。
-

@@ -22,7 +22,7 @@ EXPECTED_MENTORS = [
 ]
 
 REQUIRED_COPY = [
-    "先看清学生条件，再设计可执行的升学路径",
+    "先评估学生起点，再设计可执行的升学路径",
     "真正有效的升学规划，始于准确判断，成于持续管理",
     "家长沟通与决策支持",
     "如何在专业选择、院校梯度、材料与面试之间建立更匹配学生背景的申请组合",
@@ -38,6 +38,7 @@ REQUIRED_COPY = [
 
 FORBIDDEN_COPY = [
     "以结果为目标，以路径管理",
+    "先看清学生条件，再设计可执行的升学路径",
     "高端教育咨询的核心，是判断力与持续管理",
     "家庭陪跑",
     "建立胜率更高的组合",
@@ -153,6 +154,7 @@ def main() -> int:
     parser.add_argument("site_dir", type=Path)
     args = parser.parse_args()
     index = (args.site_dir / "index.html").read_text(encoding="utf-8")
+    visible_index = index.replace('<span class="no-break">', "").replace("</span>", "")
     css = (args.site_dir / "styles.css").read_text(encoding="utf-8")
     script = (args.site_dir / "script.js").read_text(encoding="utf-8")
     failures: list[str] = []
@@ -161,7 +163,7 @@ def main() -> int:
     require("hero-academic-advisory-pexels-5311406" not in index + css, "Rejected academic hero image must remain absent", failures)
 
     for text in REQUIRED_COPY:
-      require(text in index, f"Required public copy missing: {text}", failures)
+      require(text in visible_index, f"Required public copy missing: {text}", failures)
     for text in FORBIDDEN_COPY:
       require(text not in index, f"Forbidden or unverified public copy still present: {text}", failures)
 
@@ -190,7 +192,7 @@ def main() -> int:
     require('href="#testimonials"' not in index, "Testimonials section navigation should remain hidden", failures)
     require('id="testimonials"' not in index, "Testimonials section should remain hidden", failures)
 
-    for text in ["先看清学生条件，再设计可执行的升学路径", "Olivia Zhang 导师照片", "Qi Miao 导师照片", "Sophia Chen 导师照片"]:
+    for text in ["先评估学生起点，再设计可执行的", "Olivia Zhang 导师照片", "Qi Miao 导师照片", "Sophia Chen 导师照片"]:
       require(text in script, f"Language map missing current public text: {text}", failures)
     require('"Rain 支持"' not in script, "Language map should not keep Rain 支持 as a current key", failures)
 

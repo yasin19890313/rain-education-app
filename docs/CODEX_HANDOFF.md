@@ -1,6 +1,6 @@
 # Codex Handoff For Rain Education Website
 
-最后更新：2026-06-20
+最后更新：2026-06-21
 
 这份文件专门给新 Codex 窗口看。接手时不要从旧聊天猜上下文，先读这些文档和当前代码。
 
@@ -19,14 +19,21 @@
 
 这个仓库是 Rain Education 官网版本归档仓库，不是 Next.js、Vite 或 npm 构建型项目。
 
-当前最新官网版本：
+正式生产基准版本：
 
 - 版本：v26 Brand Consistency & Performance
 - 本地工作目录：`website-versions/work/rain-education-website-v26-brand-consistency-performance`
-- 最新部署包：`website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
-- 最新桌面预览：`website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
-- 最新手机预览：`website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
+- 部署包：`website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
+- 桌面预览：`website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
+- 手机预览：`website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
 - SHA256：`7841fd5d4d182c23bfcbd0f64d5b2b7adf05fb44a730f3e7aa35373fa55c47bc`
+
+当前最新审核版本：
+
+- 版本：v28.2 Parent-facing Copy & Pre-Merge QA
+- 当前审核分支：`review/v28-parent-facing-copy-polish`
+- 审核工作目录：`website-versions/work/rain-education-website-v28-parent-facing-copy-polish`
+- 当前审核版本尚未合并 Rain-Education-Website，尚未部署线上官网。
 
 注意：`website-versions/work/` 被 Git 忽略，GitHub 固化依赖部署 zip、预览图、README 和 docs 文档。需要改页面时，在最新 work 目录中改，验证后重新打包到 archives。
 

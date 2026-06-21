@@ -4,7 +4,9 @@ Rain Education 官网项目长期归档与交接仓库。
 
 本仓库保存香港瑞恩国际教育集团有限公司（HONG KONG RAIN INTERNATIONAL EDUCATION GROUP LIMITED）官网在 2026 年 6 月 redesign 过程中的部署包、预览图、校验值和长期接力文档。
 
-当前最新版本是 **v26 Brand Consistency & Performance**。它在 v25 Oxbridge Consulting Home 基础上修正 Header、Hero、章节导航、Introduction、语言一致性、移动端数据卡和资源体积，继续保持高端教育咨询集团 / 国际升学规划机构定位。
+正式生产基准版本是 **v26 Brand Consistency & Performance**。它在 v25 Oxbridge Consulting Home 基础上修正 Header、Hero、章节导航、Introduction、语言一致性、移动端数据卡和资源体积，继续保持高端教育咨询集团 / 国际升学规划机构定位。
+
+当前最新审核版本是 **v28.2 Parent-facing Copy & Pre-Merge QA**，当前审核分支为 `review/v28-parent-facing-copy-polish`。该审核版本尚未合并 Rain-Education-Website，尚未部署线上官网。
 
 ## Live Site
 
@@ -55,13 +57,16 @@ website-versions/
   work/                     # local working copies, intentionally ignored by Git
 ```
 
-## Latest Version
+## Production Baseline And Review Version
 
-- Version: `v26 Brand Consistency & Performance`
+- 正式生产基准版本：`v26 Brand Consistency & Performance`
 - Archive: `website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
 - SHA256: `7841fd5d4d182c23bfcbd0f64d5b2b7adf05fb44a730f3e7aa35373fa55c47bc`
 - Desktop preview: `website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
 - Mobile preview: `website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
+- 当前最新审核版本：`v28.2 Parent-facing Copy & Pre-Merge QA`
+- 当前审核分支：`review/v28-parent-facing-copy-polish`
+- 审核状态：尚未合并 Rain-Education-Website，尚未部署线上官网。
 
 The latest v26 package uses:
 
@@ -70,7 +75,7 @@ The latest v26 package uses:
 
 ## Current Review Product Naming
 
-The current v28.1 review branch uses the confirmed product name:
+The current v28.2 review branch uses the confirmed product name:
 
 - 简体：港九大本硕连读精英规划计划
 - 繁体：港九大本碩連讀精英規劃計劃
@@ -80,23 +85,23 @@ Current public review pages should not use the previous wording for this product
 
 ## Local Preview
 
-The latest editable working copy is local-only:
+The current v28.2 editable review working copy is local-only:
 
 ```text
-website-versions/work/rain-education-website-v26-brand-consistency-performance
+website-versions/work/rain-education-website-v28-parent-facing-copy-polish
 ```
 
 Run it locally:
 
 ```bash
-cd website-versions/work/rain-education-website-v26-brand-consistency-performance
-python3 -m http.server 4186 --bind 127.0.0.1
+cd website-versions/work/rain-education-website-v28-parent-facing-copy-polish
+python3 -m http.server 4288 --bind 0.0.0.0
 ```
 
 Open:
 
 ```text
-http://127.0.0.1:4186/
+http://127.0.0.1:4288/
 ```
 
 Because `website-versions/work/` is intentionally ignored by Git, GitHub readers should use the latest zip package and the docs folder as the source of truth unless they are working on the same local machine.

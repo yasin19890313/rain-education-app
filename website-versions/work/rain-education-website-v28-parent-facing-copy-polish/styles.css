@@ -156,15 +156,18 @@ summary { color: var(--ink-deep); cursor: pointer; font-family: var(--serif); fo
 details p { color: var(--muted); margin-bottom: 0; }
 
 .v26-enquire { background: var(--navy); color: #fff; }
-.v26-enquire .v26-kicker, .v26-enquire h2 { color: #fff; }
+.v26-enquire .v26-kicker { color: var(--gold); }
+.v26-enquire h2 { color: #fff; }
 .v26-enquire-layout { display: grid; gap: 48px; grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr); margin: 0 auto; max-width: 1180px; }
+.v26-enquire-copy { background: #071d35; border: 1px solid rgba(255,255,255,0.12); color: #fff; padding: 32px; }
+.v26-enquire-copy h2 { color: #fff; }
 .v26-enquire-copy > p:not(.v26-kicker) { color: rgba(255,255,255,0.78); }
 .v26-contact-stack { display: grid; gap: 12px; margin: 28px 0; }
 .v26-contact-stack a { border-bottom: 1px solid rgba(255,255,255,0.18); color: #fff; display: flex; justify-content: space-between; padding: 12px 0; text-decoration: none; }
 .v26-contact-stack span { color: rgba(255,255,255,0.66); }
 .scan-card-grid { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 160px)); }
-.scan-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); padding: 14px; }
-.scan-card span { display: block; font-weight: 800; margin-bottom: 10px; }
+.scan-card { background: #fff; border: 1px solid rgba(255,255,255,0.24); color: var(--ink); padding: 14px; }
+.scan-card span { color: var(--gold-deep); display: block; font-weight: 800; margin-bottom: 10px; }
 .scan-card figure { background: #fff; margin: 0; padding: 8px; }
 .consultation-form { background: #fff; color: var(--ink); display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 30px; }
 .consultation-form label { color: #28384c; display: grid; font-size: 0.9rem; font-weight: 700; gap: 8px; }

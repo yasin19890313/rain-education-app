@@ -1,6 +1,6 @@
 # Rain Education Website Status
 
-最后更新：2026-06-20
+最后更新：2026-06-21
 
 这份文件记录 Rain Education 官网当前真实进度、技术架构、页面状态、版本差异、性能数据、验证结果和 GitHub 状态。
 
@@ -27,18 +27,25 @@
 - 静态图片、完整官方 Logo、导师图、二维码、offer 图
 - `python3 -m http.server` 本地预览
 
-## 2. 当前最新官网版本
+## 2. 正式生产基准与当前审核版本
 
-- 最新版本：v26 Brand Consistency & Performance
-- 最新工作目录：`website-versions/work/rain-education-website-v26-brand-consistency-performance`
-- 最新归档包：`website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
-- 最新桌面预览：`website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
-- 最新手机预览：`website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
+- 正式生产基准版本：v26 Brand Consistency & Performance
+- v26 工作目录：`website-versions/work/rain-education-website-v26-brand-consistency-performance`
+- v26 归档包：`website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip`
+- v26 桌面预览：`website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
+- v26 手机预览：`website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
 - SHA256：`7841fd5d4d182c23bfcbd0f64d5b2b7adf05fb44a730f3e7aa35373fa55c47bc`
-- 分支：`Rain-Education-Website`
+- 生产开发分支：`Rain-Education-Website`
 - 远端：`https://github.com/yasin19890313/rain-education-app.git`
 
-本地预览：
+当前最新审核版本：
+
+- 当前最新审核版本：v28.2 Parent-facing Copy & Pre-Merge QA
+- 当前审核分支：`review/v28-parent-facing-copy-polish`
+- 当前审核工作目录：`website-versions/work/rain-education-website-v28-parent-facing-copy-polish`
+- 当前审核版本尚未合并 Rain-Education-Website，尚未部署线上官网。
+
+v26 本地预览：
 
 ```bash
 cd website-versions/work/rain-education-website-v26-brand-consistency-performance

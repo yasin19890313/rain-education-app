@@ -29,13 +29,9 @@ REQUIRED_COPY = [
     "关于香港升学，家长最常问的五个问题",
     "由升学顾问与学科导师共同支持每一条升学路径",
     "提交学生基本情况，获取初步升学评估",
-    "统计口径",
     "录取案例",
     "规划案例",
     "阶段成果",
-    "真实服务反馈",
-    "经授权匿名呈现",
-    "以下反馈需完成来源与授权核验后展示。",
     "本计划以长期学术规划、过程管理和申请支持为核心，不构成任何院校录取承诺；具体服务与责任边界以正式协议为准。",
     "阶段规划、GPA 管理、背景提升、本科及研究生衔接、家长阶段复盘。",
 ]
@@ -191,8 +187,10 @@ def main() -> int:
     require('data-filter="planning-cases"' in index, "Case filters should include planning cases", failures)
     require('data-category="planning-cases' in index, "Planning case category missing", failures)
     require('data-category="offer-outcomes' in index, "Offer case category missing", failures)
+    require('href="#testimonials"' not in index, "Testimonials section navigation should remain hidden", failures)
+    require('id="testimonials"' not in index, "Testimonials section should remain hidden", failures)
 
-    for text in ["先看清学生条件，再设计可执行的升学路径", "真实服务反馈", "以下反馈需完成来源与授权核验后展示。", "Olivia Zhang 导师照片", "Qi Miao 导师照片", "Sophia Chen 导师照片"]:
+    for text in ["先看清学生条件，再设计可执行的升学路径", "Olivia Zhang 导师照片", "Qi Miao 导师照片", "Sophia Chen 导师照片"]:
       require(text in script, f"Language map missing current public text: {text}", failures)
     require('"Rain 支持"' not in script, "Language map should not keep Rain 支持 as a current key", failures)
 

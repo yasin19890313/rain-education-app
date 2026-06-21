@@ -16,23 +16,23 @@
 | 港九大本硕连读精英规划计划边界说明 | 无独立说明 | 本计划以长期学术规划、过程管理和申请支持为核心，不构成任何院校录取承诺；具体服务与责任边界以正式协议为准。 |
 | 案例筛选 | 多个路径标签筛选 | 全部案例 / 录取案例 / 规划案例 |
 | 未核验最终录取案例 | 最终结果：进入可持续管理的本科衔接路径 | 阶段成果，并归入规划案例 |
-| 家长反馈 | 匿名反馈，呈现家庭真正重视的服务价值 | 真实服务反馈 / 经授权匿名呈现 |
-| 家长反馈内容 | 展示 4 条匿名评价 | 暂时隐藏；显示“以下反馈需完成来源与授权核验后展示。” |
-| 数据口径 | 仅保留简短免责声明 | 新增“统计口径”入口；详细样本范围与统计周期待内部确认 |
+| 家长反馈导航与模块 | 展示家长反馈入口与占位提示 | 暂时完整隐藏，不保留公开占位区 |
+| 家长反馈内容 | 展示 4 条匿名评价 | 已从公开页面移除，待真实授权材料齐备后再恢复 |
+| 数据口径 | 仅保留简短免责声明 | 已移除内部口径占位，不在公开页面展示未核验说明 |
 
 ## 导师资历核验表
 
-| 导师 | 当前公开页显示 | 已从公开页隐藏 / 收紧 | 待用户确认 |
+| 导师 | 当前公开页保守显示 | 已从公开页隐藏 / 收紧 | 后续内部材料处理 |
 | --- | --- | --- | --- |
-| Alison Ballance | MFA, Goldsmiths University of London；中文介绍为艺术学习背景与作品集支持 | 删除完整英文介绍段落；专业标签改为中文 | 学位完成状态、是否可公开 MFA 细节、UAL / UCL 标签是否为服务方向而非个人资历 |
-| Bodan Ding | MSc, Imperial College London；支持数学、GPA 与研究生申请 | 隐藏 Oxford PhD Offer；不把 Offer 写成学历；删除 “HKU, Imperial and Oxford offer pathway” 表述 | MSc 学位证明；Oxford PhD Offer 是否可作为内部顾问判断材料保留在非公开资料 |
-| Minting Luo | MSc Applied Artificial Intelligence, HKU；中文介绍为 AI 素养、教育科技与学术规划 | 删除完整英文介绍段落；专业标签改为中文 | 学位官方名称、完成状态、HKU 项目官方英文名称 |
-| Qi Miao | HKUST 生物信息学方向；中文介绍为生物信息、环境工程与科研写作支持 | 隐藏 “PhD Bioinformatics, HKUST” 和 “HKUST PhD student” 表述，避免 PhD 已完成 / 在读混淆 | 是否为 HKUST PhD student、具体学位状态、MSc distinction 与研究方向是否可公开 |
-| Ruiyi Ren | BA, The University of Hong Kong；中文介绍为经济与中文背景 | 删除完整英文介绍段落；专业标签改为中文 | BA 学位官方名称、完成状态、经济与中文背景是否为主修/双专业/课程方向 |
-| Xiaoyu Sun | BSc Physics, Imperial College London；中文介绍为物理、数学、科研规划与 G5/HK 申请支持 | 隐藏 A-Level 4A*、具体研究经历等未核验证据 | BSc 学位完成状态、A-Level 4A* 与研究经历是否可公开 |
-| Wenhuai Wu | PhD Mathematics, University of Cambridge；中文介绍为剑桥数学方向背景 | 隐藏 “former STEP marker” 与 “Cambridge mathematics scholar” 表述 | PhD 学位证明；former STEP marker 是否有正式依据；是否可公开 STEP/MAT 相关经历 |
-| Olivia Zhang | Yale University 教育研究方向；中文介绍为教育研究、跨地区申请与长期规划 | 隐藏 Dr. 头衔；隐藏 “Ph.D. Education Studies, Yale University” | Dr. 头衔与 PhD 学位是否准确；Yale 项目官方名称与完成状态 |
-| Sophia Chen | M.Ed. Higher Education, UCLA；中文介绍为副学士衔接、GPA 恢复与跨地区规划 | 删除完整英文介绍段落；专业标签改为中文 | M.Ed. 学位证明、UCLA 项目官方名称与完成状态 |
+| Alison Ballance | Goldsmiths University of London 艺术学习背景；作品集与面试支持 | 删除完整英文介绍段落；专业标签改为中文 | 精确学位、完成状态与 UAL / UCL 标签性质仅在材料核验后恢复 |
+| Bodan Ding | Imperial College London 学习背景；数学、GPA 与研究生申请支持 | 不把博士方向录取邀约写成学历；删除跨校经历串联表述 | 博士方向录取邀约仅作内部材料，不在公开页展示 |
+| Minting Luo | HKU 应用人工智能学习背景；AI 素养、教育科技与学术规划 | 删除完整英文介绍段落；专业标签改为中文 | 精确学位官方名称与完成状态仅在材料核验后恢复 |
+| Qi Miao | HKUST 生物信息学方向；生物信息、环境工程与科研写作支持 | 不把博士在读或博士方向写成已完成学历 | 博士相关状态与研究细节仅作内部核验，不在公开页展示 |
+| Ruiyi Ren | The University of Hong Kong 经济与中文背景 | 删除完整英文介绍段落；专业标签改为中文 | 主修、双专业或课程方向等精确信息仅在材料核验后恢复 |
+| Xiaoyu Sun | Imperial College London 物理学习背景；物理、数学、科研规划与 G5/HK 申请支持 | 隐藏 A-Level 成绩与具体研究经历等未核验证据 | 精确成绩与研究经历仅在材料核验后恢复 |
+| Wenhuai Wu | University of Cambridge 数学方向背景；牛剑数学申请、笔试训练与面试准备 | 隐藏具体博士状态、阅卷经历与学者类描述 | 具体博士状态、任职或阅卷经历仅在材料核验后恢复 |
+| Olivia Zhang | Yale University 教育研究方向；跨地区申请与长期规划 | 隐藏博士头衔与精确博士项目名称 | 博士头衔、项目官方名称与完成状态仅在材料核验后恢复 |
+| Sophia Chen | UCLA 高等教育方向背景；副学士衔接、GPA 恢复与跨地区规划 | 删除完整英文介绍段落；专业标签改为中文 | 精确学位官方名称与完成状态仅在材料核验后恢复 |
 
 ## 导师图片使用表
 
@@ -63,9 +63,9 @@
 | 案例 | v28 公开分类 | 当前公开页处理 | 待内部核验 |
 | --- | --- | --- | --- |
 | 高考后转向香港副学士，再争取本科衔接 | 规划案例 | 使用“阶段成果”，不作为最终录取结果 | 是否有后续本科录取结果；若无，仅作为规划过程案例 |
-| 港科大商业分析硕士申请 | 录取案例 | 保留 HKUST MSc Business Analytics admission offer | Offer 文件、学生授权、脱敏版本 |
-| 英国本科心理学与教育方向录取 | 录取案例 | 保留 UCL BSc Psychology with Education unconditional offer | Offer 文件、学生授权、脱敏版本 |
-| 低 GPA 学生的补强与院校梯度重构 | 规划案例 | 使用“阶段成果”，不作为最终录取结果 | 是否存在最终 Offer；若无，仅作为规划过程案例 |
+| 港科大商业分析硕士申请 | 录取案例 | 保留香港科技大学商业分析硕士录取 | 录取文件、学生授权、脱敏版本 |
+| 英国本科心理学与教育方向录取 | 录取案例 | 保留 UCL 心理学与教育学本科课程无条件录取 | 录取文件、学生授权、脱敏版本 |
+| 低 GPA 学生的补强与院校梯度重构 | 规划案例 | 使用“阶段成果”，不作为最终录取结果 | 是否存在最终录取结果；若无，仅作为规划过程案例 |
 
 ## 家长反馈真实性核验表
 

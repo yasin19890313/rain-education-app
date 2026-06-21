@@ -68,6 +68,16 @@ The latest v26 package uses:
 - `styles.css?v=20260619-v26-brand-consistency-performance`
 - `script.js?v=20260619-v26-brand-consistency-performance`
 
+## Current Review Product Naming
+
+The current v28.1 review branch uses the confirmed product name:
+
+- 简体：港九大本硕连读精英规划计划
+- 繁体：港九大本碩連讀精英規劃計劃
+- English: Hong Kong Nine Universities Bachelor–Master Elite Planning Programme
+
+Current public review pages should not use the previous wording for this product.
+
 ## Local Preview
 
 The latest editable working copy is local-only:

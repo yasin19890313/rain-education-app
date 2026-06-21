@@ -27,17 +27,24 @@
 - 静态图片、完整官方 Logo、导师图、二维码、offer 图
 - `python3 -m http.server` 本地预览
 
-## 2. 当前正式开发版本与上一生产基准
+## 2. 当前正式生产版本与上一生产基准
 
-- 当前正式开发版本：v28.2 Parent-facing Copy & Credibility Release Candidate
+- 当前正式生产版本：v28.2 Parent-facing Copy & Credibility Production Release
 - 来源审核分支：`review/v28-parent-facing-copy-polish`
 - 合并来源 commit：`0d116f8c8a4b5066eff38a09dee7cc4b43de446a`
+- GitHub production commit：`ba3a3195919c81f7a38ed7e7a970fc4fed19b230`
 - 当前工作目录：`website-versions/work/rain-education-website-v28-parent-facing-copy-polish`
-- 当前部署候选包：`website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip`
-- 当前部署候选包 SHA256：`2f1686aeb665fbff0ea497bb7c54c81f6c646fa089fe6cf60050f6d648cb44f3`
+- 当前生产部署包：`website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip`
+- 当前生产部署包 SHA256：`2f1686aeb665fbff0ea497bb7c54c81f6c646fa089fe6cf60050f6d648cb44f3`
 - 当前桌面预览：`website-versions/previews/rain-v28-2-parent-facing-release-candidate-desktop-1440.png`
 - 当前手机预览：`website-versions/previews/rain-v28-2-parent-facing-release-candidate-mobile-390.png`
-- 当前尚未部署 `rainedu.hk`。
+- 当前已部署 `rainedu.hk`。
+- Production deploy ID：`6a37ebddaf7c92d3f367c70b`
+- Production deploy URL：`https://6a37ebddaf7c92d3f367c70b--cute-vacherin-7d30d4.netlify.app`
+- Production domain：`https://rainedu.hk`
+- 正式部署时间：`2026-06-21T13:49:19.223Z`（`2026-06-21 21:49:19 Asia/Shanghai`）
+- 上一个生产 Deploy ID：`6a300c8d7cf9884c6836d929`
+- 回滚方式：在 Netlify Deploys 中选择上一个生产 Deploy `6a300c8d7cf9884c6836d929` 并重新 publish；回滚前不要删除任何历史 Deploy。
 - 生产开发分支：`Rain-Education-Website`
 - 远端：`https://github.com/yasin19890313/rain-education-app.git`
 
@@ -205,7 +212,7 @@ v26 在核心项目区从 v25 的 7 个服务卡扩展为 9 个：
 
 ### 首页 `/`
 
-完成度：v26 当前主版本。
+完成度：v28.2 当前生产版本，已部署到 `https://rainedu.hk/`。
 
 首页结构：
 
@@ -221,10 +228,11 @@ v26 在核心项目区从 v25 的 7 个服务卡扩展为 9 个：
 10. Parent Decision Center
 11. Trust Center
 12. Mentor Team
-13. Testimonials
-14. FAQ
-15. Enquire Today
-16. Footer
+13. FAQ
+14. Enquire Today
+15. Footer
+
+说明：家长反馈 / Testimonials 模块已在 v28.2 可信度清理中暂时隐藏，待真实授权反馈补齐后再上线。
 
 ### 其他静态页面
 
@@ -322,17 +330,51 @@ Playwright 资源记录中首屏图片资源为 Hero + Logo + favicon，encoded 
 - broken images：0
 - 表单：存在
 
-## 8. 当前仍需注意
+## 8. v28.2 生产部署验证记录
+
+检查日期：2026-06-21
+
+### Netlify 发布记录
+
+- Site name：`cute-vacherin-7d30d4`
+- Site ID：`5a6d60b8-bbfb-41f3-add7-0358f9e21c9a`
+- Production deploy ID：`6a37ebddaf7c92d3f367c70b`
+- Production deploy URL：`https://6a37ebddaf7c92d3f367c70b--cute-vacherin-7d30d4.netlify.app`
+- Production domain：`https://rainedu.hk`
+- 上一个生产 Deploy ID：`6a300c8d7cf9884c6836d929`
+- 部署命令使用已通过净室测试的 zip 解压目录，`--no-build`，未重新构建、未修改 Netlify 配置、未创建新站点。
+
+### 冒烟测试结果
+
+- `https://rainedu.hk/`：200。
+- `https://www.rainedu.hk/`：301 跳转到 `https://rainedu.hk/` 后 200。
+- 首页显示 v28.2 香港维港 Hero，页面无 `<video>`。
+- Logo、Hero、CSS、JS、导师照片、offer 图、微信二维码和 WhatsApp 二维码正常加载。
+- ZH-CN / ZH-HK / EN 切换正常。
+- 9 名导师完整显示。
+- 9 个核心项目完整显示。
+- 案例筛选正常：录取案例 2、规划案例 2、全部案例 4。
+- 导师筛选正常：数学 / 物理筛选 3、全部导师 9。
+- FAQ 可展开收起。
+- 咨询表单必填校验正常。
+- `robots.txt` 与 `sitemap.xml` 正常。
+- canonical、Open Graph 与结构化数据存在。
+- 无 404、无坏图、无控制台错误。
+- Desktop 1440px 无横向溢出：`1440/1440`。
+- Mobile 390px 无横向溢出：`390/390`。
+- 无痕/无缓存浏览器上下文验证显示 v28.2。
+
+## 9. 当前仍需注意
 
 - `website-versions/work/` 被 Git 忽略；GitHub 主要固化 zip、预览图、README 和 docs。
 - 当前没有 npm build/lint/dev，不能用 npm 命令作为成功标准。
-- 线上 Netlify 不会自动更新，需要手动上传最新 zip 解压后的内容。
+- 后续 Netlify 更新仍需先完成部署包、净室测试、Draft Deploy 和用户明确生产发布确认。
 - 官方完整 Logo 原图 `assets/logo.png` 约 1.2MB，v26 保留它是为了满足“必须使用用户提供的官方完整 Logo 文件”的要求；浏览器优先加载 84KB 的 `logo-optimized.webp`。
 - 后续可继续深化专题页和案例页，但首页不应恢复视频、宣传片、飞线、粒子或科技感动画。
 
-## 9. GitHub 状态
+## 10. GitHub 状态
 
 - 当前仓库：`https://github.com/yasin19890313/rain-education-app.git`
 - 当前分支：`Rain-Education-Website`
-- 当前正式开发版本 v28.2 已合并到 `Rain-Education-Website` 后作为部署候选管理。
-- 当前尚未部署 `rainedu.hk`，需等待用户最终本地验收后再执行线上部署。
+- 当前正式生产版本 v28.2 已合并到 `Rain-Education-Website` 并部署到 `rainedu.hk`。
+- GitHub production commit：`ba3a3195919c81f7a38ed7e7a970fc4fed19b230`

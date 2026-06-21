@@ -4,9 +4,9 @@ Rain Education 官网项目长期归档与交接仓库。
 
 本仓库保存香港瑞恩国际教育集团有限公司（HONG KONG RAIN INTERNATIONAL EDUCATION GROUP LIMITED）官网在 2026 年 6 月 redesign 过程中的部署包、预览图、校验值和长期接力文档。
 
-当前正式开发版本是 **v28.2 Parent-facing Copy & Credibility Release Candidate**。它由 `review/v28-parent-facing-copy-polish` 审核分支合并而来，来源审核 commit 为 `0d116f8c8a4b5066eff38a09dee7cc4b43de446a`。
+当前正式生产版本是 **v28.2 Parent-facing Copy & Credibility Production Release**。它由 `review/v28-parent-facing-copy-polish` 审核分支合并而来，来源审核 commit 为 `0d116f8c8a4b5066eff38a09dee7cc4b43de446a`。
 
-v26 Brand Consistency & Performance 仍作为上一轮正式生产基准完整保留，归档包、预览图和文档不删除、不覆盖。当前尚未部署 `rainedu.hk`，线上更新仍需用户最终本地验收后手动执行。
+v26 Brand Consistency & Performance 仍作为上一轮正式生产基准完整保留，归档包、预览图和文档不删除、不覆盖。v28.2 已于 2026-06-21 21:49:19 Asia/Shanghai 正式部署到 `rainedu.hk`。
 
 ## Live Site
 
@@ -15,7 +15,7 @@ v26 Brand Consistency & Performance 仍作为上一轮正式生产基准完整�
 - https://rainedu.hk/
 - https://cute-vacherin-7d30d4.netlify.app/
 
-注意：本仓库保存可部署包和版本记录，不代表线上站点已经自动更新到最新包。线上更新仍需手动上传 Netlify。
+当前线上站点已部署 v28.2。后续上线仍需先生成部署包、完成净室测试和 Draft Deploy 验收，再手动执行 Netlify production deploy。
 
 ## Technical Stack
 
@@ -57,16 +57,39 @@ website-versions/
   work/                     # local working copies, intentionally ignored by Git
 ```
 
-## Current Release Candidate
+## Current Production Release
 
-- 当前正式开发版本：`v28.2 Parent-facing Copy & Credibility Release Candidate`
+- 当前正式生产版本：`v28.2 Parent-facing Copy & Credibility Production Release`
 - 来源审核分支：`review/v28-parent-facing-copy-polish`
 - 合并来源 commit：`0d116f8c8a4b5066eff38a09dee7cc4b43de446a`
+- GitHub production commit：`ba3a3195919c81f7a38ed7e7a970fc4fed19b230`
 - Archive: `website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip`
 - SHA256: `2f1686aeb665fbff0ea497bb7c54c81f6c646fa089fe6cf60050f6d648cb44f3`
 - Desktop preview: `website-versions/previews/rain-v28-2-parent-facing-release-candidate-desktop-1440.png`
 - Mobile preview: `website-versions/previews/rain-v28-2-parent-facing-release-candidate-mobile-390.png`
-- 部署状态：尚未部署 `rainedu.hk`。
+- Production deploy ID: `6a37ebddaf7c92d3f367c70b`
+- Production deploy URL: `https://6a37ebddaf7c92d3f367c70b--cute-vacherin-7d30d4.netlify.app`
+- Production domain: `https://rainedu.hk`
+- Deployed at: `2026-06-21T13:49:19.223Z` (`2026-06-21 21:49:19 Asia/Shanghai`)
+- Previous production deploy ID for rollback: `6a300c8d7cf9884c6836d929`
+
+## Production Verification
+
+v28.2 production was verified after deployment on `https://rainedu.hk/`:
+
+- `https://rainedu.hk/` returns 200.
+- `https://www.rainedu.hk/` redirects to `https://rainedu.hk/` and returns 200.
+- Homepage shows the v28.2 Hong Kong Hero, not the old video homepage.
+- Logo, Hero, CSS, JavaScript, mentor photos, offer images and QR codes load correctly.
+- ZH-CN / ZH-HK / EN switching works.
+- 9 mentors and 9 core programmes display.
+- Case filtering, mentor filtering, FAQ and consultation form validation work.
+- `robots.txt`, `sitemap.xml`, canonical, Open Graph and structured data are present.
+- No 404, broken images or console errors were found.
+- Desktop 1440px overflow check: `1440/1440`.
+- Mobile 390px overflow check: `390/390`.
+
+Rollback: keep deploy `6a300c8d7cf9884c6836d929` available in Netlify. If a severe production issue is found, use Netlify Deploys to publish that previous deploy back to production before making further changes.
 
 ## Previous Production Baseline
 
@@ -76,19 +99,19 @@ website-versions/
 - Desktop preview: `website-versions/previews/rain-v26-brand-consistency-performance-desktop.png`
 - Mobile preview: `website-versions/previews/rain-v26-brand-consistency-performance-mobile.png`
 
-## Current Review Product Naming
+## Current Product Naming
 
-The current v28.2 release candidate uses the confirmed product name:
+The current v28.2 production release uses the confirmed product name:
 
 - 简体：港九大本硕连读精英规划计划
 - 繁体：港九大本碩連讀精英規劃計劃
 - English: Hong Kong Nine Universities Bachelor–Master Elite Planning Programme
 
-Current public release candidate pages should not use the previous wording for this product.
+Current public pages should not use the previous wording for this product.
 
 ## Local Preview
 
-The current v28.2 editable release candidate working copy is local-only:
+The current v28.2 editable working copy is local-only:
 
 ```text
 website-versions/work/rain-education-website-v28-parent-facing-copy-polish
@@ -111,13 +134,15 @@ Because `website-versions/work/` is intentionally ignored by Git, GitHub readers
 
 ## Deployment
 
-Manual Netlify deployment:
+Manual Netlify deployment for future versions:
 
 1. Use the latest zip from `website-versions/archives/`.
 2. Extract it.
-3. Upload the extracted contents to the existing Netlify site.
-4. Do not create a new Netlify site unless the user explicitly asks.
-5. Confirm that the zip root directly contains `index.html`, `styles.css`, `script.js`, and `assets/`.
+3. Verify the SHA256 and run a clean-room local preview from the extracted directory.
+4. Create a Netlify Draft Deploy against the existing `cute-vacherin-7d30d4` site and complete browser QA.
+5. Only after explicit user approval, deploy the same verified directory to production.
+6. Do not create a new Netlify site unless the user explicitly asks.
+7. Confirm that the zip root directly contains `index.html`, `styles.css`, `script.js`, and `assets/`.
 
 ## Documentation Index
 
@@ -204,4 +229,4 @@ They remain on the user's local machine and are documented in `docs/WEBSITE_STAT
 | v24 premium full consulting home | `rain-education-website-v24-premium-full-consulting-home-20260619.zip` | Restores complete content and removes homepage video/canvas animation while keeping high-end consulting style. |
 | v25 Oxbridge consulting home | `rain-education-website-v25-oxbridge-consulting-home-20260619.zip` | Reorganizes the homepage into a high-end consulting-company structure with static hero banner, case logic, mentor credibility, FAQ and Enquire Today conversion. |
 | v26 Brand Consistency & Performance | `rain-education-website-v26-brand-consistency-performance-20260620.zip` | Previous production baseline. Refines Oxbridge-style header, hero, section navigation, Introduction, language consistency, mobile metrics, asset cleanup, and reduces zip from 71MB to 3.5MB. |
-| v28.2 Parent-facing Copy & Credibility Release Candidate | `rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip` | Current formal development version and deployment candidate. Merged from `review/v28-parent-facing-copy-polish` at `0d116f8c8a4b5066eff38a09dee7cc4b43de446a`; not deployed to `rainedu.hk`. |
+| v28.2 Parent-facing Copy & Credibility Production Release | `rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip` | Current production release on `rainedu.hk`. Merged from `review/v28-parent-facing-copy-polish` at `0d116f8c8a4b5066eff38a09dee7cc4b43de446a`; production deploy `6a37ebddaf7c92d3f367c70b`. |

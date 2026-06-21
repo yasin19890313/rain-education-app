@@ -6,15 +6,35 @@
 
 ## 当前版本状态
 
-- 当前正式开发版本：v28.2 Parent-facing Copy & Credibility Release Candidate
+- 当前正式生产版本：v28.2 Parent-facing Copy & Credibility Production Release
 - 来源审核分支：`review/v28-parent-facing-copy-polish`
 - 合并来源 commit：`0d116f8c8a4b5066eff38a09dee7cc4b43de446a`
+- GitHub production commit：`ba3a3195919c81f7a38ed7e7a970fc4fed19b230`
 - 当前正式分支：`Rain-Education-Website`
-- 当前部署候选包：`website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip`
-- 当前部署候选包 SHA256：`2f1686aeb665fbff0ea497bb7c54c81f6c646fa089fe6cf60050f6d648cb44f3`
-- 当前尚未部署 `rainedu.hk`。
+- 当前生产部署包：`website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip`
+- 当前生产部署包 SHA256：`2f1686aeb665fbff0ea497bb7c54c81f6c646fa089fe6cf60050f6d648cb44f3`
+- 当前已部署 `rainedu.hk`。
+- Production deploy ID：`6a37ebddaf7c92d3f367c70b`
+- Production deploy URL：`https://6a37ebddaf7c92d3f367c70b--cute-vacherin-7d30d4.netlify.app`
+- 正式部署时间：`2026-06-21T13:49:19.223Z`（`2026-06-21 21:49:19 Asia/Shanghai`）
+- 上一个生产 Deploy ID：`6a300c8d7cf9884c6836d929`
+- 回滚方式：在 Netlify Deploys 中选择上一个生产 Deploy `6a300c8d7cf9884c6836d929` 并 publish 回生产。
 
-v26 Brand Consistency & Performance 作为上一生产基准完整保留；后续路线图项应以 v28.2 RC 的首页结构、9 名导师、香港维港 Hero、家长视角文案和可信度边界为基础继续推进。
+v26 Brand Consistency & Performance 作为上一生产基准完整保留；后续路线图项应以 v28.2 生产版本的首页结构、9 名导师、香港维港 Hero、家长视角文案和可信度边界为基础继续推进。
+
+## v28.2 生产冒烟测试摘要
+
+- `https://rainedu.hk/`：200。
+- `https://www.rainedu.hk/`：301 到主域后 200。
+- 首页显示 v28.2 香港维港 Hero，视频标签 0。
+- Logo、Hero、CSS、JS、导师照片和二维码正常。
+- ZH-CN / ZH-HK / EN 切换正常。
+- 9 名导师和 9 个核心项目完整显示。
+- 案例筛选、导师筛选、FAQ、咨询表单必填校验正常。
+- `robots.txt`、`sitemap.xml`、canonical、Open Graph 和结构化数据正常。
+- 无 404、坏图和控制台错误。
+- Desktop 1440px 无横向溢出：`1440/1440`。
+- Mobile 390px 无横向溢出：`390/390`。
 
 ## P0 最高优先级
 

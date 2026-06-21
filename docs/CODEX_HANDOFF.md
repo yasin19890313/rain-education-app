@@ -19,17 +19,23 @@
 
 这个仓库是 Rain Education 官网版本归档仓库，不是 Next.js、Vite 或 npm 构建型项目。
 
-当前正式开发版本：
+当前正式生产版本：
 
-- 版本：v28.2 Parent-facing Copy & Credibility Release Candidate
+- 版本：v28.2 Parent-facing Copy & Credibility Production Release
 - 来源审核分支：`review/v28-parent-facing-copy-polish`
 - 合并来源 commit：`0d116f8c8a4b5066eff38a09dee7cc4b43de446a`
+- GitHub production commit：`ba3a3195919c81f7a38ed7e7a970fc4fed19b230`
 - 本地工作目录：`website-versions/work/rain-education-website-v28-parent-facing-copy-polish`
-- 部署候选包：`website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip`
+- 生产部署包：`website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip`
 - SHA256：`2f1686aeb665fbff0ea497bb7c54c81f6c646fa089fe6cf60050f6d648cb44f3`
 - 桌面预览：`website-versions/previews/rain-v28-2-parent-facing-release-candidate-desktop-1440.png`
 - 手机预览：`website-versions/previews/rain-v28-2-parent-facing-release-candidate-mobile-390.png`
-- 当前尚未部署 `rainedu.hk`。
+- 当前已部署 `rainedu.hk`。
+- Production deploy ID：`6a37ebddaf7c92d3f367c70b`
+- Production deploy URL：`https://6a37ebddaf7c92d3f367c70b--cute-vacherin-7d30d4.netlify.app`
+- 正式部署时间：`2026-06-21T13:49:19.223Z`（`2026-06-21 21:49:19 Asia/Shanghai`）
+- 上一个生产 Deploy ID：`6a300c8d7cf9884c6836d929`
+- 回滚方式：如生产出现严重故障，在 Netlify Deploys 中选择 `6a300c8d7cf9884c6836d929` 并 publish 回生产；不要删除历史 Deploy。
 
 上一生产基准版本：
 
@@ -41,7 +47,17 @@
 
 注意：`website-versions/work/` 被 Git 忽略，GitHub 固化依赖部署 zip、预览图、README 和 docs 文档。需要改页面时，在最新 work 目录中改，验证后重新打包到 archives。
 
-## 3. v26 本轮关键说明
+## 3. v28.2 当前线上关键说明
+
+- v28.2 已正式上线到 `https://rainedu.hk`。
+- 首页使用香港维港静态 Hero，无视频、无 canvas、无飞线或粒子动画。
+- 首页保留 9 个核心项目、9 名导师、成功案例、FAQ 和咨询表单。
+- 家长反馈模块已按可信度要求暂时隐藏。
+- 产品名称统一为“港九大本硕连读精英规划计划 / 港九大本碩連讀精英規劃計劃 / Hong Kong Nine Universities Bachelor–Master Elite Planning Programme”。
+- 公开导师资历使用保守表述，未确认精确学位不公开。
+- 生产验证通过：三语言、9 名导师、9 个项目、案例筛选、导师筛选、FAQ、表单、二维码、robots、sitemap、Desktop 1440 和 Mobile 390。
+
+## 4. v26 历史关键说明
 
 - v26 在 v25 Oxbridge Consulting Home 基础上迭代，不是重写。
 - Header 改为平直、白色、轻量、学院型导航。
@@ -56,7 +72,7 @@
 - 新增 Trust Center，保留信任中心、合规说明、隐私保护、案例匿名化和结果边界。
 - 性能清理后 zip 从 v25 的 71MB 降到 v26 的 3.5MB。
 
-## 4. 保留内容红线
+## 5. 保留内容红线
 
 后续不要删除这些内容：
 
@@ -77,7 +93,7 @@
 - 咨询表单
 - 微信、WhatsApp、电话、邮箱和二维码
 
-## 5. 用户明确否定的方向
+## 6. 用户明确否定的方向
 
 不要恢复：
 
@@ -93,41 +109,58 @@
 
 官网必须继续像：高端教育咨询集团、高端升学规划机构、国际教育品牌、长期学术规划顾问。
 
-## 6. 新窗口接手后的第一步
+## 7. 新窗口接手后的第一步
 
 1. 运行 `git status -sb`，确认分支和未提交改动。
 2. 进入最新 work 目录。
 3. 启动静态服务：
 
 ```bash
-cd website-versions/work/rain-education-website-v26-brand-consistency-performance
-python3 -m http.server 4186 --bind 127.0.0.1
+cd website-versions/work/rain-education-website-v28-parent-facing-copy-polish
+python3 -m http.server 4292 --bind 127.0.0.1
 ```
 
 4. 打开：
 
 ```text
-http://127.0.0.1:4186/
+http://127.0.0.1:4292/
 ```
 
 5. 对照 docs 文档检查是否偏离用户要求。
 
-## 7. 当前质量检查命令
+## 8. 当前质量检查命令
 
 项目没有 `package.json`，不要假装存在 npm build/lint。
 
 可用检查：
 
 ```bash
-node --check website-versions/work/rain-education-website-v26-brand-consistency-performance/script.js
-python3 -m http.server 4186 --bind 127.0.0.1
-unzip -tq website-versions/archives/rain-education-website-v26-brand-consistency-performance-20260620.zip
+node --check website-versions/work/rain-education-website-v28-parent-facing-copy-polish/script.js
+python3 -m http.server 4292 --bind 127.0.0.1
+unzip -tq website-versions/archives/rain-education-website-v28-2-parent-facing-release-candidate-20260621.zip
 cd website-versions/archives && shasum -a 256 -c ../SHA256SUMS.txt
 ```
 
 Playwright 至少检查：1440、1024、768、390 宽度；无横向滚动；无 video/canvas；FAQ 8；表单存在；语言切换可用；案例筛选和导师筛选可用。
 
-## 8. v26 验证摘要
+## 9. v28.2 生产验证摘要
+
+- `https://rainedu.hk/`：200。
+- `https://www.rainedu.hk/`：301 到主域后 200。
+- Production deploy ID：`6a37ebddaf7c92d3f367c70b`。
+- 上一个生产 Deploy ID：`6a300c8d7cf9884c6836d929`。
+- 首页显示 v28.2 香港维港 Hero，视频标签 0。
+- ZH-CN / ZH-HK / EN：通过。
+- 9 名导师：通过。
+- 9 个核心项目：通过。
+- 案例筛选、导师筛选、FAQ、咨询表单：通过。
+- 微信 / WhatsApp 二维码：通过。
+- `robots.txt`、`sitemap.xml`、canonical、Open Graph、结构化数据：通过。
+- 404、坏图、控制台错误：0。
+- Desktop 1440px：无横向溢出，`1440/1440`。
+- Mobile 390px：无横向溢出，`390/390`。
+
+## 10. v26 历史验证摘要
 
 - `node --check`：通过。
 - 桌面 1440 x 1200：overflowX 0，Hero 420px，5 个数据卡等宽，FAQ 8，表单存在，broken images 0，404 0。
@@ -138,7 +171,7 @@ Playwright 至少检查：1440、1024、768、390 宽度；无横向滚动；无
 - v26 zip：3.5MB。
 - 首屏资源估算：496.4KB。
 
-## 9. 每次完成版本必须做
+## 11. 每次完成版本必须做
 
 1. 修改只发生在最新 work 目录。
 2. 运行本地预览和桌面/手机 QA。
@@ -149,7 +182,7 @@ Playwright 至少检查：1440、1024、768、390 宽度；无横向滚动；无
 7. 更新 `README.md`、`docs/WEBSITE_STATUS.md`、`docs/CODEX_HANDOFF.md`。
 8. commit 并 push 到 `Rain-Education-Website`。
 
-## 10. GitHub
+## 12. GitHub
 
 - Remote：`https://github.com/yasin19890313/rain-education-app.git`
 - Branch：`Rain-Education-Website`
